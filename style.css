@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Rubik&display=swap");
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+/* global-colors:
+background: #03ABBC;
+background: #43D3E5;
+background: #EDF7F8;
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  background: #eaeaea;
+  width: 1440px;
+}
+.container {
+  width: 84%;
+  margin: 0 auto;
+}
+/* ======================GLOBAL STYLES========== */
+.ubluebg {
+  background: #03abbc;
+}
+.light_blue {
+  background: #43d3e5;
+}
+.bluebg {
+  background: #03abbc;
+}
+.oqrbg {
+  background: #03abbc;
+}
+.ublue {
+  color: #03abbc;
+}
+.blue {
+  color: #03abbc;
+}
+.oqr {
+  color: #03abbc;
+}
+.white {
+  background: #fff;
+}
+.white_color {
+  color: #fff;
+}
+.btn {
+  background: #03abbc;
+  border-radius: 8px;
+  border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #43d3e5;
+}
+/* =============GLOBAL STYLES============= */
+nav {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 10% 50% 10%;
+  align-items: center;
+}
+
+.logo img {
+  width: 101px;
+  height: 51px;
+}
+.menu ul {
+  margin-left: 60px;
+}
+.menu ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.menu ul li a {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4d5f61;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.menu ul li a:hover {
+  color: #43d3e5;
+}
+.lang {
+  margin-left: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lang select {
+  border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  outline: none;
+  margin-left: 5px;
+}
+.lang select option {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  padding: 5px;
+  border: none;
+  background-color: #fff;
+}
+/* ======================================NAVBAR END============= */
+/* ======================= BANNER START============== */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+.banner_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 960px;
+  height: 572px;
+  border-radius: 0px 0px 0px 40px;
+}
+.products_change {
+  position: absolute;
+  width: 558px;
+  height: 517px;
+  left: -36%;
+  top: 24px;
+  background: #ffffff;
+  border: 2px solid #e1e3e3;
+  border-radius: 40px;
+  padding: 60px 50px;
+}
+.prodtitle {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 130%;
+  color: #000000;
+  padding: 20px 0;
+}
+.products_change p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4d5f61;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+.products_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_products {
+  padding: 13px 73px;
+}
+.left_arr {
+  padding: 11px 20px;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.left_arr img {
+  margin-top: 5px;
+}
+.right_arr {
+  padding: 11px 20px;
+  border-radius: 50%;
+}
+.right_arr img {
+  margin-bottom: -1px;
+}
+
+/* =============HEADER SECTION END======================== */
+
+.why_title {
+  text-align: center;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 130%;
+  padding: 20px 0;
+}
+.why_us_content1 {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 204px;
+}
+.why_us_content2 {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 204px;
+}
+.content {
+  border-radius: 12px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 110px auto;
+  padding: 25px 20px;
+  transition: 0.5s ease;
+}
+
+.content:hover {
+  box-shadow: 5px 5px 10px #cdcdcd;
+}
+.con_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+.content p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+/* ===================================WHY US END====================== */
+
+.products {
+  text-align: center;
+  margin: 80px 0;
+}
+.pro_title {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 130%;
+  color: #000;
+  margin: 40px;
+}
+.products_contents {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: 410px;
+  gap: 23px;
+}
+.pro_con {
+  background: #ffffff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 50px 20px 40px 20px;
+}
+
+.pro_con img {
+  width: 106px;
+  height: 106px;
+}
+.pro_con h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+  margin: 15px 0;
+}
+.pro_con p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #576b70;
+  margin: 25px 0;
+}
+.btn_light {
+  width: 307px;
+  height: 48px;
+  background: #edf7f8;
+  border-radius: 8px;
+  color: #0696ac;
+  border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn_light:hover {
+  background: #03abbc;
+  color: #fff;
+}
+/* =====================PRODUCTS END ==================
+ */
+.about_us {
+  background: #19bbd3;
+  margin-top: 200px;
+}
+.about_contents {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+}
+.about_content1 img {
+  width: 598px;
+  height: 774px;
+  margin-top: -100px;
+}
+.about_content2 {
+  padding-top: 103px;
+  padding-right: 20px;
+  color: #fff;
+}
+.about_content2 h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 150%;
+}
+.about_content2 p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 30px 0;
+}
+/* ===============ABOUT US END ==================== */
+
+.clients {
+  position: relative;
+  height: 700px;
+}
+.all_csection {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 40px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+.all_csection h1 {
+  text-align: center;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.clients_logos {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 175px);
+  gap: 20px;
+}
+/* ================CLIENTS END==================== */
+
+.address {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 600px;
+}
+.address_map {
+  position: relative;
+  height: 560px;
+  background-image: url("./images/mapImg.png");
+  border-radius: 0 18px 18px 0;
+}
+
+.address_map .location {
+  position: absolute;
+  top: 282px;
+  left: 310px;
+}
+.address_map .location img:nth-child(1) {
+  width: 50px;
+  height: 62px;
+  display: block;
+  margin-bottom: 10px;
+}
+.address_map .location img:nth-child(2) {
+  width: 124px;
+  height: 59px;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 37px;
+}
+
+.address_contacts {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 281px;
+  height: 260px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+}
+.contents_data {
+  margin-bottom: 20px;
+}
+.top_data img {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  color: #c9c9c9;
+}
+.top_data p {
+  display: inline-block;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #4d5f61;
+  padding: 5px 0;
+}
+.contents_data h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.form_section {
+  width: 519px;
+  height: 560px;
+  margin: 0 10% 0 30px;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
+  border-radius: 18px;
+}
+.form_section h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.form label {
+  display: block;
+  margin: 20px 0 5px 0;
+}
+.form input {
+  width: 419px;
+  height: 48px;
+  background: #f8fbfc;
+  border: 1px solid #dbe1e1;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+.send {
+  width: 419px;
+  height: 48px;
+  margin: 60px 0 0 0;
+}
+/* ===============================FORM SECTION END============= */
+
+.footer {
+  width: 1440px;
+  height: 91px;
+  background: #19bbd3;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.footer h1 {
+  text-align: right;
+  color: #fff;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 70px;
+}
+.socials {
+  margin-left: 100px;
+}
+.socials h2 {
+  display: inline-block;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.socials ul {
+  display: inline-block;
+}
+
+.socials ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+.socials ul li a {
+  text-decoration: none;
+  padding:5px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials ul li a img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
