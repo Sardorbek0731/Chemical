@@ -995,7 +995,7 @@ nav {
   .left_arr {
     position: absolute;
     top: 100px;
-    left: -32px;
+    left: -20px;
     padding: 10px 20px;
     transform: rotate(180deg);
     border-radius: 50%;
@@ -1194,7 +1194,7 @@ nav {
   .address_contacts {
     position: absolute;
     top: 280px;
-    right: 13%;
+    right: 50px;
     width: 281px;
     height: 260px;
     padding: 25px;
@@ -1210,7 +1210,7 @@ nav {
     grid-row-start: 1;
   }
   .form_section {
-    width: 375px;
+    width: 100%;
     height: 412px;
     margin: 0;
     padding: 20px;
