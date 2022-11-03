@@ -18,9 +18,7 @@ body {
   background: #eaeaea;
   width: 1440px;
 }
-body a{
-  text-decoration: none;
-}
+
 .container {
   width: 84%;
   margin: 0 auto;
@@ -203,6 +201,7 @@ nav {
 }
 
 .btn_products a{
+  text-decoration: none;
   color: #fff;
   padding: 13px 73px;
 }
@@ -382,6 +381,7 @@ nav {
 
 .bbtn a{
   padding: 10px 110px;
+  text-decoration: none;
   color: #000;
 }
 
