@@ -422,7 +422,7 @@ nav {
   position: absolute;
   top: 20px;
   right: 3px;
-  content: url("../images/tikka_chiziq.png");
+  content: url("./images/tikka_chiziq.png");
   width: 1px;
   height: 33px;
   border-radius: 3px 0 0 3px;
