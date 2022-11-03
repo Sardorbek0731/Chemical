@@ -507,7 +507,7 @@ nav {
 .materials_datas {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(2, 600px);
   margin-bottom: 50px;
 }
 .material_data1 {
