@@ -157,7 +157,7 @@ nav {
   height: 572px;
   border-radius: 0px 0px 0px 40px;
 }
-.banner_img .bimgper{
+.banner_img .bimgper {
   width: 960px;
   height: 572px;
 }
@@ -199,13 +199,13 @@ nav {
 .btn_products {
   padding: 13px 23px;
 }
-.sakson{
+.sakson {
   position: absolute;
   top: auto;
   left: 80%;
 }
 
-.btn_products a{
+.btn_products a {
   text-decoration: none;
   color: #fff;
   padding: 13px 73px;
@@ -367,13 +367,13 @@ nav {
   background: #03abbc;
   color: #fff;
 }
-.btn_light a{
+.btn_light a {
   text-decoration: none;
   color: #0696ac;
   padding: 10px 110px;
 }
 
-.btn_light a:hover{
+.btn_light a:hover {
   color: #fff;
 }
 .building_materials {
@@ -384,13 +384,13 @@ nav {
   margin: 20px 20px 20px 0;
 }
 
-.bbtn a{
+.bbtn a {
   padding: 10px 110px;
   text-decoration: none;
   color: #000;
 }
 
-.bbtn a:hover{
+.bbtn a:hover {
   color: #fff;
 }
 .materials {
@@ -1006,11 +1006,11 @@ nav {
     border-radius: 24px;
     padding: 20px 20px;
   }
-  
-.btn_products a{
-  color: #fff;
-  padding: 13px 23px;
-}
+
+  .btn_products a {
+    color: #fff;
+    padding: 13px 23px;
+  }
   .prodtitle {
     font-size: 24px;
     padding: 10px 0;
@@ -1026,12 +1026,12 @@ nav {
     align-items: center;
   }
   .slider_btn {
-    margin:0;
+    margin: 0;
   }
- .left_arr {
+  .left_arr{
     position: absolute;
     top: 100px;
-    left: -20px;
+    left: -27px;
     padding: 10px 20px;
     transform: rotate(180deg);
     border-radius: 50%;
@@ -1102,8 +1102,8 @@ nav {
     text-decoration: none;
     color: #0696ac;
     padding: 10px 90px;
-}
-/* =========================================================== */
+  }
+  /* =========================================================== */
 
   .pro_title {
     font-size: 20px;
@@ -1133,6 +1133,146 @@ nav {
     width: 281px;
     height: 44px;
   }
+  /* =======================BUILDING RES START============================== */
+  .container {
+    width: 89%;
+    margin: 0 auto;
+  }
+  .bbtn1 {
+    display: none;
+  }
+
+  .bbtn2 {
+    display: none;
+  }
+  .materials {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 0;
+  }
+  .nav_bars ul {
+    width: 100%;
+    height: 63px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 0px 18px rgb(0 0 0 / 4%);
+    border-radius: 12px;
+  }
+
+  .material_navigation h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .material {
+    height: 356px;
+    width: 320px;
+    padding: 10px;
+    margin: 15px auto;
+  }
+  .material .mimg img {
+    height: 188px;
+    width: 299px;
+  }
+  .material h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .material p {
+    margin: 10px 0;
+  }
+  /* ============material datas res start======== */
+  .materials_datas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  .material_data1 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .img_datas img {
+    height: 262px;
+    width: 335px;
+    left: 20px;
+    top: 154px;
+    border-radius: 12px;
+  }
+
+  .characters h1 {
+    font-size: 20px;
+  }
+
+  .characters p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .characs {
+    height: 173px;
+    width: 335px;
+  }
+  .characs p{
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .characs p::after{
+    content: "------------------------";
+    margin: 0 20px;
+    height: 1px;
+    color: #dbe1e1;
+  }
+  
+.characs h3{
+  font-size: 12px;
+}
+
+.material_tit h1{
+  font-size: 20px;
+  margin: 20px 0 0 0 ;
+}
+.material_data2_all{
+  position: relative;
+}
+.material_data2{
+  width: 400%;
+  height: 450px;
+}
+.left_arrp {
+  position: absolute;
+  top: 240px;
+  left: 4px;
+  padding: 10px 20px;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.left_arrp img {
+  width: 6px;
+  height: 11px;
+  margin-top: 5px;
+}
+
+.right_arrp img {
+  width: 6px;
+  height: 11px;
+  margin-top: 5px;
+}
+.right_arrp {
+  position: absolute;
+  top: 240px;
+  right: -6px;
+  padding: 10px 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+  /* ============material datas res end======== */
+
+  /* ========================BUILDING RES END===================================== */
 
   /* ===================================================products res end=================== */
 
@@ -1223,9 +1363,9 @@ nav {
   .address {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 300px;
+    grid-template-rows: 450px 500px;
   }
-  .address_map{
+  .address_map {
     border-radius: 18px;
   }
   .addmap {
@@ -1242,12 +1382,12 @@ nav {
     padding: 25px;
     background: #fff;
     border-radius: 12px;
-}
-.address_map .location {
-  position: absolute;
-  top: 135px;
-  left: 150px;
-}
+  }
+  .address_map .location {
+    position: absolute;
+    top: 135px;
+    left: 150px;
+  }
   .form_cons {
     grid-row-start: 1;
   }
@@ -1274,54 +1414,26 @@ nav {
     height: 44px;
     margin: 20px 0 0 0;
   }
-/* ===========================address section res end================= */
+  /* ===========================address section res end================= */
 
   .footer {
     width: 100%;
     height: 91px;
     background: #19bbd3;
     display: grid;
-    grid-template-columns:100%;
+    grid-template-columns: 100%;
+    grid-template-rows:40px 30px ;
     align-items: center;
     text-align: center;
-    margin-top: 280px;
-}
-.footer h1 {
-  text-align: center;
-  font-size: 12px;
-  line-height: 14px;
-  margin-right: 0;
-}
-.socials {
-  margin-left: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    margin-top: 80px;
+  }
+  .footer h1 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 0;
+  }
+  .socials {
+    margin-left: 0px;
+  }
 }
