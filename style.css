@@ -18,6 +18,9 @@ body {
   background: #eaeaea;
   width: 1440px;
 }
+body a{
+  text-decoration: none;
+}
 .container {
   width: 84%;
   margin: 0 auto;
@@ -49,9 +52,6 @@ body {
 }
 .white_color {
   color: #fff;
-}
-a{
-  text-decoration: none;
 }
 .btn {
   background: #03abbc;
