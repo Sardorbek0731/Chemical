@@ -50,6 +50,9 @@ body {
 .white_color {
   color: #fff;
 }
+a{
+  text-decoration: none;
+}
 .btn {
   background: #03abbc;
   border-radius: 8px;
@@ -196,6 +199,11 @@ nav {
   align-items: center;
 }
 .btn_products {
+  padding: 13px 23px;
+}
+
+.btn_products a{
+  color: #fff;
   padding: 13px 73px;
 }
 .left_arr {
@@ -286,7 +294,7 @@ nav {
 
 .products {
   text-align: center;
-  margin: 80px 0;
+  margin: 40px 0;
 }
 .pro_title {
   font-family: "Heebo";
@@ -355,14 +363,30 @@ nav {
   background: #03abbc;
   color: #fff;
 }
+.btn_light a{
+  text-decoration: none;
+  color: #0696ac;
+  padding: 10px 110px;
+}
+
+.btn_light a:hover{
+  color: #fff;
+}
 .building_materials {
   width: 100%;
   height: auto;
 }
 .bbtn {
   margin: 20px 20px 20px 0;
-  padding: 10px 20px;
+}
+
+.bbtn a{
+  padding: 10px 110px;
   color: #000;
+}
+
+.bbtn a:hover{
+  color: #fff;
 }
 .materials {
   display: grid;
@@ -478,6 +502,7 @@ nav {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(2, 500px);
+  margin-bottom: 50px;
 }
 .material_data1 {
   display: grid;
@@ -563,7 +588,7 @@ nav {
  */
 .about_us {
   background: #19bbd3;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .about_contents {
   display: grid;
@@ -745,7 +770,7 @@ nav {
   display: grid;
   grid-template-columns: 65% 35%;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .footer h1 {
@@ -975,6 +1000,11 @@ nav {
     border-radius: 24px;
     padding: 20px 20px;
   }
+  
+.btn_products a{
+  color: #fff;
+  padding: 13px 23px;
+}
   .prodtitle {
     font-size: 24px;
     padding: 10px 0;
@@ -1062,6 +1092,12 @@ nav {
     line-height: 150%;
   }
   /* ====================why us section res end ==================== */
+  .btn_light a {
+    text-decoration: none;
+    color: #0696ac;
+    padding: 10px 90px;
+}
+/* =========================================================== */
 
   .pro_title {
     font-size: 20px;
