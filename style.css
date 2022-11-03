@@ -503,9 +503,7 @@ nav {
   height: 48px;
   margin-top: 10px;
 }
-.building_datas{
-  margin-bottom: 200px;
-}
+
 .materials_datas {
   display: grid;
   grid-template-columns: 100%;
