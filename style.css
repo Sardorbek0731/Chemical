@@ -92,8 +92,15 @@ nav {
 .burger_menu {
   display: none;
 }
+.burMenu{
+  display: none;
+}
+.menu{
+  display: block;
+}
 .menu ul {
   margin-left: 60px;
+  width: 300px;
 }
 .menu ul li {
   display: inline-block;
@@ -954,8 +961,9 @@ nav {
   }
   .navbar {
     display: grid;
-    grid-template-columns: 10% 50% 10%;
+    grid-template-columns: 50% 50% ;
     align-items: center;
+    padding: 7px 0 0 0;
   }
 
   .logo img {
@@ -964,8 +972,9 @@ nav {
   }
   .burgerMenu{
     display: inline-block;
-    margin-left: 60px;
-    margin-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: 110px;
   }
   .burger_menu{
     display: inline-block;
@@ -986,6 +995,7 @@ nav {
       rgba(0, 78, 85, 1) 100%
     );
     text-align: center;
+    display: none;
   }
   
   .burMenu .close{
@@ -1063,6 +1073,7 @@ nav {
 
   .banner_img {
     position: absolute;
+    top: 20px;
     right: 22px;
     width: 335px;
     height: 263px;
@@ -1070,6 +1081,7 @@ nav {
   .banner_img .bimgper {
     width: 335px;
     height: 237px;
+    border-radius:10px;
   }
 
   .products_change {
@@ -1109,7 +1121,7 @@ nav {
     position: absolute;
     top: 100px;
     left: -27px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     transform: rotate(180deg);
     border-radius: 50%;
     margin-right: 10px;
@@ -1123,7 +1135,7 @@ nav {
     position: absolute;
     top: 100px;
     right: -32px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 50%;
     margin-right: 10px;
   }
