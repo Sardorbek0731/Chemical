@@ -92,7 +92,7 @@ nav {
 .burger_menu {
   display: none;
 }
-.burMenu{
+.none{
   display: none;
 }
 .menu{
@@ -1000,7 +1000,6 @@ nav {
       rgba(0, 78, 85, 1) 100%
     );
     text-align: center;
-    display: none;
   }
   
   .burMenu .close{
@@ -1053,7 +1052,7 @@ nav {
     }
     100%{
       height: 0;
-      display: none;
+      /* display: none; */
     }
   }
   
@@ -1079,10 +1078,12 @@ nav {
   .banner_img {
     position: absolute;
     top: 20px;
-    right: 22px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
     width: 335px;
     height: 263px;
-  }
+}
   .banner_img .bimgper {
     width: 335px;
     height: 237px;
@@ -1486,8 +1487,7 @@ nav {
     width: 335px;
     height: 337px;
   }
-    margin-left: 5%;
-  }.address_contacts {
+  .address_contacts {
     position: absolute;
     top: 300px;
     right: 0;
