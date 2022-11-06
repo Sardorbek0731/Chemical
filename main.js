@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     burMenu.classList.add('animActive')
     burMenu.classList.remove('closeMenu')
-    burMenu.classList.remove('none')
+    burMenu.classList.remove('burNone')
     setTimeout(() =>{
       document.querySelector('.ul').classList.remove('none')
     },300)
