@@ -650,6 +650,9 @@ nav {
   position: relative;
   height: 700px;
 }
+.none{
+  display: inline-block;
+}
 
 .clients_btn_left {
   display: none;
