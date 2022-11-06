@@ -103,13 +103,13 @@ nav {
 .burger_menu {
   display: none;
 }
-.burNone{
+.none{
   display: none;
 }
 .menu{
   display: block;
 }
-.menu ul {
+.menu ul { 
   margin-left: 60px;
   width: 300px;
 }
@@ -650,7 +650,7 @@ nav {
   position: relative;
   height: 700px;
 }
-.none{
+.mnone{
   display: inline-block;
 }
 
