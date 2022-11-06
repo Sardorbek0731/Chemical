@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chemical</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="container">
           <div class="burMenu none">
-            <button class="close">x</button>
-            <ul class="ul none">
-              <li><a href="./about.html">About us</a></li>
-              <li><a href="./products.html">Products</a></li>
-              <li><a href="./media.html" target="_self">Media</a></li>
-              <li><a href="./contacts.html">Contact us</a></li>
+            <button class="close">
+              <img src="./Images/close.png" alt="" />
+            </button>
+            <ul class="ul">
+              <li><a href="#about">About us</a></li>
+              <li><a href="./Assets/products.html">Products</a></li>
+              <li><a href="./Assets/media.html" target="_self">Media</a></li>
+              <li><a href="./Assets/contacts.html">Contact us</a></li>
             </ul>
           </div>
           <div class="burgerMenu">
@@ -28,17 +30,20 @@
             />
           </div>
           <div class="navbar">
-            <div class="logo">
-              <img src="./images/logo.png" alt="logo" />
-            </div>
-
-            <div class="menu">
-              <ul>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./media.html" target="_self">Media</a></li>
-                <li><a href="./contacts.html">Contact us</a></li>
-              </ul>
+            <div class="navbarText">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./images/logo.png" alt="logo" />
+                </a>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="Assets/products.html">Products</a></li>
+                  <li><a href="Assets/media.html" target="_self">Media</a></li>
+                  <li><a href="Assets/contacts.html">Contact us</a></li>
+                </ul>
+              </div>
             </div>
             <div class="lang">
               <img src="./images/icons/Globe.png" alt="Globe" />
@@ -52,8 +57,7 @@
         </div>
       </nav>
       <div class="banner">
-        <div class="banner_img">
-          <img src="./images/header_person.png" alt="Person" class="bimgper" />
+        <div class="container">
           <div class="products_change">
             <h1 class="prodtitle">
               Lorem <span class="ublue">Ipsum </span> is simply dummy text of
@@ -80,72 +84,73 @@
             </div>
           </div>
         </div>
+        <img src="./images/header_person.png" alt="Person" class="bimgper" />
       </div>
     </header>
+
     <section class="why_us">
       <h1 class="why_title"><span class="blue">Why</span> us?</h1>
-      <div class="container">
-        <div class="why_us_contents">
-          <div class="why_us_content1">
-            <div class="content ubluebg">
-              <div class="con_img light_blue">
-                <img src="./images/kukrak_nishoni.png" alt="yorliq" />
-              </div>
-              <div class="con_titles">
-                <h1 class="white_color">Lorem Ipsum is simply</h1>
-                <p class="white_color">
-                  Vision By inventing and importing best quality raw materials,
-                  to be one of the professional and experienced company which
-                  can help to improve the profit of its clients and responsibly
-                  the life of people all over the world.
-                </p>
-              </div>
+      <div class="why_us_contents">
+        <div class="why_us_content1">
+          <div class="content ubluebg">
+            <div class="con_img light_blue">
+              <img src="./images/kukrak_nishoni.png" alt="yorliq" />
             </div>
-            <div class="content white">
-              <div class="con_img light_blue">
-                <img src="./images/zur.png" alt="ok" />
-              </div>
-              <div class="con_titles">
-                <h1>Lorem Ipsum is simply</h1>
-                <p>
-                  Inventing, producing and importing the highest quality
-                  chemical raw materials with best price for its partners all
-                  over the world.
-                </p>
-              </div>
+            <div class="con_titles">
+              <h1 class="white_color">Lorem Ipsum is simply</h1>
+              <p class="white_color">
+                Vision By inventing and importing best quality raw materials, to
+                be one of the professional and experienced company which can
+                help to improve the profit of its clients and responsibly the
+                life of people all over the world.
+              </p>
             </div>
           </div>
-          <div class="why_us_content2">
-            <div class="content white">
-              <div class="con_img light_blue">
-                <img src="./images/dollor.png" alt="dollor" />
-              </div>
-              <div class="con_titles">
-                <h1>Lorem Ipsum is simply</h1>
-                <p>
-                  Inventing, producing and importing the highest quality
-                  chemical raw materials with best price for its partners all
-                  over the world.
-                </p>
-              </div>
+          <div class="content white">
+            <div class="con_img light_blue">
+              <img src="./images/zur.png" alt="ok" />
             </div>
-            <div class="content white">
-              <div class="con_img light_blue">
-                <img src="./images/lampa.png" alt="lampa" />
-              </div>
-              <div class="con_titles">
-                <h1>Lorem Ipsum is simply</h1>
-                <p>
-                  Inventing, producing and importing the highest quality
-                  chemical raw materials with best price for its partners all
-                  over the world.
-                </p>
-              </div>
+            <div class="con_titles">
+              <h1>Lorem Ipsum is simply</h1>
+              <p>
+                Inventing, producing and importing the highest quality chemical
+                raw materials with best price for its partners all over the
+                world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="why_us_content2">
+          <div class="content white">
+            <div class="con_img light_blue">
+              <img src="./images/dollor.png" alt="dollor" />
+            </div>
+            <div class="con_titles">
+              <h1>Lorem Ipsum is simply</h1>
+              <p>
+                Inventing, producing and importing the highest quality chemical
+                raw materials with best price for its partners all over the
+                world.
+              </p>
+            </div>
+          </div>
+          <div class="content white">
+            <div class="con_img light_blue">
+              <img src="./images/lampa.png" alt="lampa" />
+            </div>
+            <div class="con_titles">
+              <h1>Lorem Ipsum is simply</h1>
+              <p>
+                Inventing, producing and importing the highest quality chemical
+                raw materials with best price for its partners all over the
+                world.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="products" id="products">
       <h1 class="pro_title">Products</h1>
       <div class="container">
@@ -186,6 +191,7 @@
         </div>
       </div>
     </section>
+
     <section class="about_us" id="about">
       <div class="container">
         <div class="about_contents">
@@ -211,6 +217,7 @@
         </div>
       </div>
     </section>
+
     <section class="clients">
       <div class="container">
         <div class="all_csection">
@@ -235,6 +242,7 @@
         </div>
       </div>
     </section>
+
     <section class="address" id="contact">
       <div class="address_map">
         <iframe
@@ -272,25 +280,32 @@
         <div class="form_section">
           <h1>Lorem ipsum</h1>
           <form class="form">
-            <label>Name</label>
-            <input type="text" id="name" placeholder="Ismingizni kiriting!" />
-            <label>Phone number</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Telefon raqamingizni kiriting"
-            />
-            <label>Email</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Email pochtani kiriting"
-            />
+            <div class="name">
+              <label>Name</label>
+              <input type="text" id="name" placeholder="Ismingizni kiriting!" />
+            </div>
+            <div class="number">
+              <label>Phone number</label>
+              <input
+                type="text"
+                id="number"
+                placeholder="Telefon raqamingizni kiriting"
+              />
+            </div>
+            <div class="email">
+              <label>Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email pochtani kiriting"
+              />
+            </div>
+            <button class="btn send" id="send">Send</button>
           </form>
-          <button class="btn send">Send</button>
         </div>
       </div>
     </section>
+
     <section class="footer">
       <h1>All rights reserved enviro chemicals</h1>
       <div class="socials">
@@ -319,34 +334,36 @@
         </ul>
       </div>
     </section>
-    <div class="order_now" style="display: none">
+
+    <div class="order_now none" id="order-now">
       <div class="overlay"></div>
       <div class="order_section">
         <h1>Order now</h1>
-        <button class="close">
+        <button class="close" id="close">
           <img src="./images/close.png" alt="x" />
         </button>
-        <form class="order_form">
-          <label>Ism</label>
-          <input type="text" placeholder="Ismingizni kiriting!" />
-          <label>Telefon raqami </label>
-          <input type="text" value="+998" />
-          <label>Mail</label>
-          <input type="text" placeholder="Email pochtangizni kiriting!" />
-          <button class="btn send">Send</button>
-        </form>
-      </div>
-    </div>
-    <div class="successfully" style="display: none">
-      <div class="overlay"></div>
-      <div class="order_section">
-        <img src="./images/headset.png" alt="headset" />
-        <h1>Successfully send</h1>
-        <p>Operators will contact you shortly!</p>
-        <button class="btn send">Close</button>
+        <label>Ism</label>
+        <input type="text" placeholder="Ismingizni kiriting!" />
+        <label>Telefon raqami </label>
+        <input type="text" value="+998" />
+        <label>Mail</label>
+        <input type="text" placeholder="Email pochtangizni kiriting!" />
+        <button class="btn send" id="send-next">Send</button>
       </div>
     </div>
 
-    <script src="./main.js"></script>
+    <div class="successfully none" id="successfully">
+      <div class="overlay"></div>
+      <div class="order_section successfully_section">
+        <div class="successfull_img">
+          <img src="./images/headset.png" alt="headset" />
+        </div>
+        <h1>Successfully send</h1>
+        <p>Operators will contact you shortly!</p>
+        <button class="btn send" id="close-successfully">Okay.</button>
+      </div>
+    </div>
+
+    <script src="./JS/main.js"></script>
   </body>
 </html>
