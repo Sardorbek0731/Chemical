@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
+    <div class="overlay none" id="overlay"></div>
     <header>
       <nav>
         <div class="container">
-          <div class="burMenu none">
-            <button class="close">
+          <div class="burMenu none" id="bur-menu">
+            <button class="close" onclick="closeNav()">
               <img src="./Images/close.png" alt="" />
             </button>
             <ul class="ul">
@@ -22,19 +23,20 @@
               <li><a href="./Assets/contacts.html">Contact us</a></li>
             </ul>
           </div>
-          <div class="burgerMenu">
-            <img
-              src="./images/icons/burger_menu.png"
-              alt="menu"
-              class="burger_menu"
-            />
-          </div>
           <div class="navbar">
             <div class="navbarText">
               <div class="logo">
                 <a href="index.html">
                   <img src="./images/logo.png" alt="logo" />
                 </a>
+              </div>
+              <div class="burgerMenu">
+                <img
+                  src="./images/icons/burger_menu.png"
+                  alt="menu"
+                  class="burger_menu"
+                  onclick="openNav()"
+                />
               </div>
               <div class="menu">
                 <ul>
@@ -222,22 +224,56 @@
       <div class="container">
         <div class="all_csection">
           <h1>Clients</h1>
-          <button class="btn left_arr clients_btn_left">
-            <img src="./images/icons/allow_right.png" alt="" />
-          </button>
-          <button class="btn right_arr clients_btn_right">
-            <img src="./images/icons/allow_right.png" alt="" />
-          </button>
           <div class="clients_logos">
-            <img src="./images/logoIPsum.png" alt="logoIPsum" class="block" />
-            <img src="./images/logoIPsum1.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum2.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum3.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum4.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum5.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum6.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum7.png" alt="logoIPsum" class="mnone" />
-            <img src="./images/logoIPsum8.png" alt="logoIPsum" class="mnone" />
+            <button class="btn left_arr clients_btn_left">
+              <img src="./images/icons/allow_right.png" alt="" />
+            </button>
+            <button class="btn right_arr clients_btn_right">
+              <img src="./images/icons/allow_right.png" alt="" />
+            </button>
+            <div class="client_logos_img">
+              <img src="./images/logoIPsum.png" alt="logoIPsum" class="block" />
+              <img
+                src="./images/logoIPsum1.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum2.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum3.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum4.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum5.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum6.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum7.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+              <img
+                src="./images/logoIPsum8.png"
+                alt="logoIPsum"
+                class="mnone"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -245,13 +281,11 @@
 
     <section class="address" id="contact">
       <div class="address_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d39448.50935380679!2d71.7836268026915!3d40.3686898189802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfarg&#39;ona%20shahar%20boychechak4!5e0!3m2!1sru!2sru!4v1667603953374!5m2!1sru!2sru"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <img src="../Images/mapImg.png" alt="map" class="addmap" />
+        <div class="location">
+          <img src="../Images/location.png" alt="location" />
+          <img src="../Images/logo.png" alt="address" />
+        </div>
         <div class="address_contacts">
           <div class="contents_data">
             <div class="top_data">
@@ -364,6 +398,7 @@
       </div>
     </div>
 
+    <script src="./JS/nav.js"></script>
     <script src="./JS/main.js"></script>
   </body>
 </html>

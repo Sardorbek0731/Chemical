@@ -8,23 +8,19 @@
     <title>Chemical</title>
   </head>
   <body>
+    <div class="overlay none" id="overlay"></div>
     <nav>
       <div class="container">
-        <div class="burMenu none">
-          <button class="close">x</button>
-          <ul class="ul none">
-            <li><a href="../index#about.html">About us</a></li>
+        <div class="burMenu none" id="bur-menu">
+          <button class="close" onclick="closeNav()">
+            <img src="../Images/close.png" alt="" />
+          </button>
+          <ul class="ul">
+            <li><a href="../index.html#about">About us</a></li>
             <li><a href="../Assets/products.html">Products</a></li>
             <li><a href="../Assets/media.html" target="_self">Media</a></li>
             <li><a href="../Assets/contacts.html">Contact us</a></li>
           </ul>
-        </div>
-        <div class="burgerMenu">
-          <img
-            src="../Images/icons/burger_menu.png"
-            alt="menu"
-            class="burger_menu"
-          />
         </div>
         <div class="navbar">
           <div class="navbarText">
@@ -33,8 +29,16 @@
                 <img src="../Images/logo.png" alt="logo" />
               </a>
             </div>
+            <div class="burgerMenu">
+              <img
+                src="../Images/icons/burger_menu.png"
+                alt="menu"
+                class="burger_menu"
+                onclick="openNav()"
+              />
+            </div>
             <div class="menu">
-              <ul class="ul">
+              <ul>
                 <li><a href="../index.html#about">About us</a></li>
                 <li><a href="../Assets/products.html">Products</a></li>
                 <li><a href="../Assets/media.html" target="_self">Media</a></li>
@@ -104,7 +108,7 @@
               placeholder="Email pochtani kiriting"
             />
           </form>
-          <button class="btn send">Send</button>
+          <button class="btn send" id="send">Send</button>
         </div>
       </div>
     </section>
@@ -137,5 +141,37 @@
         </ul>
       </div>
     </section>
+
+    <div class="order_now none" id="order-now">
+      <div class="overlay"></div>
+      <div class="order_section">
+        <h1>Order now</h1>
+        <button class="close" id="close">
+          <img src="../Images/close.png" alt="x" />
+        </button>
+        <label>Ism</label>
+        <input type="text" placeholder="Ismingizni kiriting!" />
+        <label>Telefon raqami </label>
+        <input type="text" value="+998" />
+        <label>Mail</label>
+        <input type="text" placeholder="Email pochtangizni kiriting!" />
+        <button class="btn send" id="send-next">Send</button>
+      </div>
+    </div>
+
+    <div class="successfully none" id="successfully">
+      <div class="overlay"></div>
+      <div class="order_section successfully_section">
+        <div class="successfull_img">
+          <img src="../Images/headset.png" alt="headset" />
+        </div>
+        <h1>Successfully send</h1>
+        <p>Operators will contact you shortly!</p>
+        <button class="btn send" id="close-successfully">Okay.</button>
+      </div>
+    </div>
+
+    <script src="../JS/nav.js"></script>
+    <script src="../JS/main.js"></script>
   </body>
 </html>

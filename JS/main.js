@@ -5,39 +5,22 @@ const close = document.getElementById("close");
 const closeSuccessfully = document.getElementById("close-successfully");
 const sendNext = document.getElementById("send-next");
 
-send.addEventListener("click", () => {
+send.addEventListener("click", (e) => {
+  e.preventDefault();
   orderNow.classList.remove("none");
 });
 
-close.addEventListener("click", () => {
+close.addEventListener("click", (e) => {
+  e.preventDefault();
   orderNow.classList.add("none");
 });
-sendNext.addEventListener("click", () => {
+sendNext.addEventListener("click", (e) => {
+  e.preventDefault();
   orderNow.classList.add("none");
   successfully.classList.remove("none");
 });
-closeSuccessfully.addEventListener("click", () => {
+closeSuccessfully.addEventListener("click", (e) => {
+  e.preventDefault();
   orderNow.classList.add("none");
   successfully.classList.add("none");
-});
-
-window.addEventListener("DOMContentLoaded", function () {
-  let burgerMenu = document.querySelector(".burger_menu"),
-    burMenu = document.querySelector(".burMenu"),
-    close = document.querySelector(".close");
-
-  burgerMenu.addEventListener("click", () => {
-    burMenu.classList.remove("none");
-  });
-  close.addEventListener("click", () => {
-    burMenu.classList.add("none");
-  });
-
-  window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
-    if (scrollTop >= 180) {
-      animClas.classList.add("opacityAnimation");
-      animClas1.classList.add("opacityAnimation");
-    }
-  });
 });
