@@ -10,8 +10,8 @@
   <body>
     <div class="overlay none" id="overlay"></div>
     <header>
-      <nav>
-        <div class="container">
+      <nav class="flex justify_center">
+        <div class="container justify_center">
           <div class="burMenu none" id="bur-menu">
             <button class="close" onclick="closeNav()">
               <img src="./Images/close.png" alt="" />
@@ -39,7 +39,7 @@
                 />
               </div>
               <div class="menu">
-                <ul>
+                <ul class="flex justify_center align_center">
                   <li><a href="#about">About us</a></li>
                   <li><a href="Assets/products.html">Products</a></li>
                   <li><a href="Assets/media.html" target="_self">Media</a></li>
@@ -58,9 +58,10 @@
           </div>
         </div>
       </nav>
-      <div class="banner">
+
+      <div class="banner justify_center">
         <div class="container">
-          <div class="products_change">
+          <div class="products_change flex justify_evenly align_center">
             <h1 class="prodtitle">
               Lorem <span class="ublue">Ipsum </span> is simply dummy text of
               the
@@ -71,7 +72,7 @@
               printing and typesetting industry. Lorem Ipsum
             </p>
 
-            <div class="products_btn">
+            <div class="products_btn flex align_center justify_between">
               <button class="btn btn_products">
                 <a href="./products.html">Products</a>
               </button>
@@ -92,61 +93,83 @@
 
     <section class="why_us">
       <h1 class="why_title"><span class="blue">Why</span> us?</h1>
-      <div class="why_us_contents">
-        <div class="why_us_content1">
-          <div class="content ubluebg">
-            <div class="con_img light_blue">
-              <img src="./images/kukrak_nishoni.png" alt="yorliq" />
+      <div class="why_us_contents flex justify_center align_center">
+        <div class="why_us_content1 flex justify_center align_center">
+          <div class="container justify_between">
+            <div class="content ubluebg long_content">
+              <div class="con_img">
+                <div
+                  class="con_img_bg light_blue flex justify_center align_center"
+                >
+                  <img src="./images/kukrak_nishoni.png" alt="yorliq" />
+                </div>
+              </div>
+              <div class="con_titles flex justify_center">
+                <h1 class="white_color">Lorem Ipsum is simply</h1>
+                <p class="white_color">
+                  Vision By inventing and importing best quality raw materials,
+                  to be one of the professional and experienced company which
+                  can help to improve the profit of its clients and responsibly
+                  the life of people all over the world.
+                </p>
+              </div>
             </div>
-            <div class="con_titles">
-              <h1 class="white_color">Lorem Ipsum is simply</h1>
-              <p class="white_color">
-                Vision By inventing and importing best quality raw materials, to
-                be one of the professional and experienced company which can
-                help to improve the profit of its clients and responsibly the
-                life of people all over the world.
-              </p>
-            </div>
-          </div>
-          <div class="content white">
-            <div class="con_img light_blue">
-              <img src="./images/zur.png" alt="ok" />
-            </div>
-            <div class="con_titles">
-              <h1>Lorem Ipsum is simply</h1>
-              <p>
-                Inventing, producing and importing the highest quality chemical
-                raw materials with best price for its partners all over the
-                world.
-              </p>
+            <div class="content white short_content">
+              <div class="con_img">
+                <div
+                  class="con_img_bg light_blue flex justify_center align_center"
+                >
+                  <img src="./images/zur.png" alt="ok" />
+                </div>
+              </div>
+              <div class="con_titles">
+                <h1>Lorem Ipsum is simply</h1>
+                <p>
+                  Inventing, producing and importing the highest quality
+                  chemical raw materials with best price for its partners all
+                  over the world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="why_us_content2">
-          <div class="content white">
-            <div class="con_img light_blue">
-              <img src="./images/dollor.png" alt="dollor" />
+        <div class="why_us_content2 flex justify_center align_center">
+          <div class="container justify_between">
+            <div class="content white short_content">
+              <div class="con_img">
+                <div
+                  class="con_img_bg light_blue flex justify_center align_center"
+                >
+                  <img src="./images/dollor.png" alt="dollor" />
+                </div>
+              </div>
+              <div class="con_titles">
+                <h1>Lorem Ipsum is simply</h1>
+                <p>
+                  Inventing, producing and importing the highest quality
+                  chemical raw materials with best price for its partners all
+                  over the world.
+                </p>
+              </div>
             </div>
-            <div class="con_titles">
-              <h1>Lorem Ipsum is simply</h1>
-              <p>
-                Inventing, producing and importing the highest quality chemical
-                raw materials with best price for its partners all over the
-                world.
-              </p>
-            </div>
-          </div>
-          <div class="content white">
-            <div class="con_img light_blue">
-              <img src="./images/lampa.png" alt="lampa" />
-            </div>
-            <div class="con_titles">
-              <h1>Lorem Ipsum is simply</h1>
-              <p>
-                Inventing, producing and importing the highest quality chemical
-                raw materials with best price for its partners all over the
-                world.
-              </p>
+            <div class="content white long_content">
+              <div class="con_img">
+                <div
+                  class="con_img_bg light_blue flex justify_center align_center"
+                >
+                  <img src="./images/lampa.png" alt="lampa" />
+                </div>
+              </div>
+              <div class="con_titles">
+                <h1>Lorem Ipsum is simply</h1>
+                <p>
+                  Inventing, producing and importing the highest quality
+                  chemical raw materials with best price for its partners all
+                  over the world. Inventing, producing and importing the highest
+                  quality chemical raw materials with best price for its
+                  partners all over the world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -155,39 +178,39 @@
 
     <section class="products" id="products">
       <h1 class="pro_title">Products</h1>
-      <div class="container">
-        <div class="products_contents">
+      <div class="products_contents flex justify_center align_center">
+        <div class="container justify_center align_center">
           <div class="pro_con">
-            <img src="./images/himicials.png" alt="Products" />
+            <img src="./Images/himicials.png" alt="Products" />
             <h1>Qurilish ximikatlari</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
             <button class="btn_light">
-              <a href="./building.html">View more</a>
+              <a href="./Assets/building.html">View more</a>
             </button>
           </div>
           <div class="pro_con">
-            <img src="./images/Thimicals.png" alt="Products" />
+            <img src="./Images/Thimicals.png" alt="Products" />
             <h1>Qurilish ximikatlari</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
             <button class="btn_light">
-              <a href="./building.html">View more</a>
+              <a href="./Assets/building.html">View more</a>
             </button>
           </div>
           <div class="pro_con">
-            <img src="./images/building.jpg" alt="Products" />
+            <img src="./Images/building.jpg" alt="Products" />
             <h1>Qurilish ximikatlari</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
             <button class="btn_light">
-              <a href="./building.html">View more</a>
+              <a href="./Assets/building.html">View more</a>
             </button>
           </div>
         </div>
@@ -279,63 +302,69 @@
       </div>
     </section>
 
-    <section class="address" id="contact">
-      <div class="address_map">
-        <img src="../Images/mapImg.png" alt="map" class="addmap" />
-        <div class="location">
-          <img src="../Images/location.png" alt="location" />
-          <img src="../Images/logo.png" alt="address" />
+    <section class="address flex align_center justify_center" id="contact">
+      <div class="container" style="justify-content: flex-end">
+        <div class="address_map">
+          <img src="./Images/mapImg.png" alt="map" class="addmap" />
+          <div class="location">
+            <img src="./Images/location.png" alt="location" />
+            <img src="./Images/logo.png" alt="address" />
+          </div>
+          <div class="address_contacts">
+            <div class="contents_data">
+              <div class="top_data">
+                <img src="./images/icons/phoneIcon.png" alt="phone" />
+                <p>Phone number</p>
+              </div>
+              <h1>+998 97 628 28 82</h1>
+            </div>
+            <div class="contents_data">
+              <div class="top_data">
+                <img src="./images/mail.png" alt="email" />
+                <p>E-mail</p>
+              </div>
+              <h1>The.faksa@gmail.com</h1>
+            </div>
+            <div class="contents_data">
+              <div class="top_data">
+                <img src="./images/address.png" alt="Adress" />
+                <p>Adress</p>
+              </div>
+              <h1>Farg’ona shaxar, Boychechak 4</h1>
+            </div>
+          </div>
         </div>
-        <div class="address_contacts">
-          <div class="contents_data">
-            <div class="top_data">
-              <img src="./images/icons/phoneIcon.png" alt="phone" />
-              <p>Phone number</p>
-            </div>
-            <h1>+998 97 628 28 82</h1>
+        <div class="form_cons">
+          <div class="form_section">
+            <h1>Lorem ipsum</h1>
+            <form class="form">
+              <div class="name">
+                <label>Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Ismingizni kiriting!"
+                />
+              </div>
+              <div class="number">
+                <label>Phone number</label>
+                <input
+                  type="text"
+                  id="number"
+                  placeholder="Telefon raqamingizni kiriting"
+                />
+              </div>
+              <div class="email">
+                <label>Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email pochtani kiriting"
+                />
+              </div>
+              <button class="btn send" id="send">Send</button>
+            </form>
           </div>
-          <div class="contents_data">
-            <div class="top_data">
-              <img src="./images/mail.png" alt="email" />
-              <p>E-mail</p>
-            </div>
-            <h1>The.faksa@gmail.com</h1>
-          </div>
-          <div class="contents_data">
-            <div class="top_data">
-              <img src="./images/address.png" alt="Adress" />
-              <p>Adress</p>
-            </div>
-            <h1>Farg’ona shaxar, Boychechak 4</h1>
-          </div>
-        </div>
-      </div>
-      <div class="form_cons">
-        <div class="form_section">
-          <h1>Lorem ipsum</h1>
-          <form class="form">
-            <div class="name">
-              <label>Name</label>
-              <input type="text" id="name" placeholder="Ismingizni kiriting!" />
-            </div>
-            <div class="number">
-              <label>Phone number</label>
-              <input
-                type="text"
-                id="number"
-                placeholder="Telefon raqamingizni kiriting"
-              />
-            </div>
-            <div class="email">
-              <label>Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email pochtani kiriting"
-              />
-            </div>
-            <button class="btn send" id="send">Send</button>
-          </form>
         </div>
       </div>
     </section>

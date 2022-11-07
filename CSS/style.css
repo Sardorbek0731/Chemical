@@ -23,8 +23,8 @@ body {
 }
 
 .container {
+  display: flex;
   width: 80%;
-  margin: 0 auto;
 }
 /* ======================GLOBAL STYLES========== */
 .ubluebg {
@@ -56,7 +56,7 @@ body {
 }
 .btn {
   background: #03abbc;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
   font-family: "Heebo";
   font-style: normal;
@@ -75,28 +75,49 @@ body {
 .block {
   display: inline-block;
 }
-.opacityAnimation {
-  animation: animOpacity 2s 1;
+.none {
+  display: none;
 }
-@keyframes animOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.flex {
+  display: flex;
+}
+.justify_center {
+  justify-content: center;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.justify_evenly {
+  justify-content: space-evenly;
+}
+.justify_around {
+  justify-content: space-around;
+}
+.align_center {
+  align-items: center;
+}
+.text_align {
+  text-align: left;
+}
+.flex_column {
+  flex-direction: column;
+}
+.mt_40 {
+  margin-top: 40px;
 }
 /* =============GLOBAL STYLES============= */
 nav {
   width: 100vw;
-  height: 65px;
+  height: 4.0625rem;
   background-color: #fff;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 65px;
+  height: 4.0625rem;
+  width: 100%;
 }
 
 .navbarText {
@@ -106,32 +127,30 @@ nav {
 }
 
 .logo img {
-  width: 101px;
-  height: 51px;
+  width: 6.3125rem;
+  height: 3.1875rem;
+  margin-right: 3.625rem;
 }
 
 .burger_menu {
   display: none;
-}
-.none {
-  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.0625rem;
+  width: 100%;
 }
 .menu {
   display: block;
 }
-.menu ul {
-  margin-left: 60px;
-  width: 300px;
-}
 .menu ul li {
-  display: inline-block;
-  margin-left: 15px;
+  list-style: none;
+  margin-right: 1.5rem;
 }
 .menu ul li a {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   color: #4d5f61;
   text-decoration: none;
@@ -147,13 +166,9 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.lang img {
-  width: 25px;
-  height: 25px;
-  margin-right: 11.25px;
-}
 .lang select {
   border: none;
+  background-color: white;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
@@ -179,55 +194,51 @@ nav {
 
 .banner {
   display: flex;
+  align-items: center;
   position: relative;
   width: 100vw;
-  height: 650px;
+  margin-bottom: 5rem;
 }
 .bimgper {
   position: absolute;
-  right: 0;
   top: 0;
-  width: 960px;
-  height: 572px;
+  right: 0;
   z-index: -1;
+  width: 60rem;
+  height: 35.75rem;
 }
 .products_change {
-  width: 558px;
-  height: 517px;
+  flex-direction: column;
+  width: 50%;
   background: #ffffff;
   border: 2px solid #e1e3e3;
   border-radius: 40px;
-  padding: 60px 50px;
+  padding: 0 2.5rem;
   margin-top: 27px;
+  height: 32.3125rem;
 }
 .prodtitle {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 2.625rem;
   line-height: 130%;
   color: #000000;
-  padding: 20px 0;
 }
 .products_change p {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #4d5f61;
-  padding: 10px 0;
-  margin-bottom: 100px;
 }
 .products_btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
 }
 .btn_products {
-  padding: 13px 73px;
-  width: 211px;
-  height: 50px;
+  width: 13.1875rem;
+  height: 3.125rem;
 }
 .sakson {
   position: absolute;
@@ -244,12 +255,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 .left_arr {
-  margin-right: 48px;
+  margin-right: 3rem;
 }
 .left_arr img {
   transform: rotate(180deg);
@@ -261,55 +272,61 @@ nav {
   align-items: center;
 }
 /* =============HEADER SECTION END======================== */
-
-.why_us {
-  display: flex;
+.why_us_contents {
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  width: 100vw;
+  margin-bottom: 5rem;
 }
 .why_title {
   text-align: center;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 130%;
-  padding: 20px 0;
-}
-.why_us_contents {
-  width: 82%;
+  margin-bottom: 1.875rem;
 }
 .why_us_content1,
 .why_us_content2 {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+}
+.why_us_content1 {
+  margin-bottom: 1.875rem;
 }
 .content {
+  display: flex;
   border-radius: 12px;
-  display: grid;
-  margin: 20px;
-  grid-template-columns: 110px auto;
-  padding: 25px 20px;
   transition: 0.5s ease;
+  padding: 1.875rem 2.5rem 1.875rem 1.875rem;
 }
-
+.long_content {
+  width: 56%;
+}
+.short_content {
+  width: 40%;
+}
 .content:hover {
   box-shadow: 5px 5px 10px #cdcdcd;
 }
 .con_img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-right: 1.5rem;
+}
+.con_img_bg {
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.con_titles {
+  flex-direction: column;
+  height: 100%;
 }
 .content h1 {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 130%;
   margin-bottom: 10px;
 }
@@ -317,76 +334,74 @@ nav {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 /* ===================================WHY US END====================== */
 
 .products {
-  text-align: center;
-  margin: 40px 0;
+  flex-direction: column;
   width: 100vw;
+  margin-bottom: 10rem;
 }
 .pro_title {
+  text-align: center;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 130%;
   color: #000;
-  margin: 40px;
 }
 .products_contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
   width: 100%;
 }
 .pro_con {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 387px;
-  height: 407px;
+  width: 24.1875rem;
+  height: 25.4375rem;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
-  margin: 24px 20px 0 0;
-  padding: 0 40px;
+  margin: 1.5rem 1.25rem 0 0;
+  padding: 3.875rem 2.5rem 2.5rem 2.5rem;
 }
 
 .pro_con img {
-  width: 106px;
-  height: 106px;
-  margin-bottom: 2rem;
+  width: 6.625rem;
+  height: 6.625rem;
 }
 .pro_con h1 {
-  width: 205px;
-  height: 31px;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 130%;
 }
 .pro_con p {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   text-align: center;
   color: #576b70;
-  margin: 1.25rem 0;
 }
 
 /* ===================BUILDING MATERIALS START============ */
+.building_materials {
+  margin: 2rem 0;
+}
 .btn_light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 48px;
+  height: 45px;
   background: #edf7f8;
   border-radius: 8px;
   color: #0696ac;
@@ -394,10 +409,15 @@ nav {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   transition: 0.5s ease;
   cursor: pointer;
+}
+.building_materials .btn_light,
+.back_btn {
+  width: 12.625rem;
+  margin-bottom: 2rem;
 }
 .btn_light:hover {
   background: #03abbc;
@@ -406,48 +426,26 @@ nav {
 .btn_light a {
   text-decoration: none;
   color: #0696ac;
-  font-size: 16px;
-  padding: 10px 110px;
+  font-size: 1rem;
+}
+.btn_light a img {
+  margin-right: 0.75rem;
 }
 
-.btn_light a:hover {
+.btn_light:hover a {
   color: #fff;
-}
-.building_materials {
-  width: 100%;
-  height: auto;
-}
-.bbtn {
-  margin: 20px 20px 20px 0;
-}
-
-.bbtn a {
-  padding: 10px 110px;
-  text-decoration: none;
-  color: #000;
-}
-
-.bbtn a:hover {
-  color: #fff;
-}
-.materials {
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: auto;
-  gap: 12px;
 }
 .material_navigation h1 {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 2rem;
   line-height: 130%;
-  margin-bottom: 20px;
   color: #000000;
+  margin-bottom: 2rem;
 }
 .nav_bars ul {
-  width: 387px;
-  height: 437px;
+  width: 22rem;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
@@ -456,13 +454,16 @@ nav {
   color: #0696ac;
 }
 .active::after {
+  content: "";
   position: absolute;
-  top: 20px;
-  right: 3px;
-  content: url("./images/tikka_chiziq.png");
-  width: 1px;
-  height: 33px;
-  border-radius: 3px 0 0 3px;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 4px;
+  background-color: #19bbd3;
+  height: 80%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 .black {
   color: #000;
@@ -470,15 +471,16 @@ nav {
 .nav_bars ul li {
   position: relative;
   list-style: none;
-  padding: 20px 0;
+  padding: 1.25rem;
+  border: 1px solid #eaeaea;
 }
 .nav_bars ul li a {
   text-decoration: none;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  padding: 0 0 0 20px;
-  font-size: 20px;
+  padding: 0 1.25rem 0 0;
+  font-size: 1rem;
   line-height: 29px;
   text-align: center;
   transition: 0.5s ease;
@@ -488,17 +490,16 @@ nav {
   color: #0696ac;
 }
 .material {
-  padding: 24px;
-  width: 386px;
-  height: 450px;
+  padding: 1.5rem;
+  width: 23rem;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0px 0px 18px 0px #0000000a;
   margin-bottom: 20px;
 }
 .material .mimg img {
-  height: 214px;
-  width: 338px;
+  height: 13.375rem;
+  width: 100%;
   border-radius: 12px;
   background: linear-gradient(0deg, #dbe1e1, #dbe1e1),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
@@ -508,7 +509,7 @@ nav {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 130%;
   color: #000000;
   margin: 25px 0;
@@ -517,7 +518,7 @@ nav {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   color: #576b70;
   margin: 20px 0;
@@ -535,67 +536,82 @@ nav {
 /* ===================BUILDING MATERIALS END============ */
 
 /* ===================BUILDING DATAS START============ */
+.building_datas {
+  margin: 2rem 0;
+}
 .buildbtn {
   width: 307px;
   height: 48px;
-  margin-top: 10px;
+}
+.left_arrp {
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(180deg);
+  border-radius: 50%;
+  z-index: 10;
+}
+.right_arrp {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+.left_arrp img {
+  width: 6px;
+  height: 11px;
+  margin-top: 5px;
+}
+
+.right_arrp img {
+  width: 6px;
+  height: 11px;
+  margin-top: 5px;
 }
 
 .materials_datas {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(2, 600px);
-  margin-bottom: 50px;
+  width: 100%;
 }
-.material_data1 {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  gap: 20px;
+.characters {
+  height: 29rem;
 }
 .characters h1 {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 130%;
   color: #000000;
 }
 
-.characters p {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #576b70;
-  margin: 20px 0;
-}
-
 .characs {
-  height: 250px;
-  width: 520px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 32.5rem;
+  height: 12.8125rem;
   border-radius: 18px;
   background: #fff;
-  padding: 10px 20px;
-  margin: 0 0 15px 0;
+  padding: 1rem 2rem;
+}
+.characs_conten {
+  align-items: flex-end;
 }
 .characs p {
   display: inline-block;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 140%;
   color: #4d5f61;
-  margin: 10px;
 }
-
-.characs p::after {
-  content: "-----------------------------------------";
-  margin: 0 20px;
-  height: 1px;
-  color: #dbe1e1;
+.hr_item {
+  width: 30%;
+  margin: 0 30px;
+  border-bottom: 2px dashed #dbe1e1;
+}
+.paragrapgh {
+  width: 30rem;
 }
 .characs h3 {
   display: inline-block;
@@ -607,31 +623,28 @@ nav {
   text-align: right;
   color: #000000;
 }
-
+.material_data2,
+.material_tit,
+.material_data1 {
+  width: 100%;
+}
 .material_tit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
-.material_data2_all h1 {
-  display: inline-block;
-  margin: 20px 0;
-}
-
-.but {
-  margin-right: 30px;
-}
-.material_data2 .material {
-  display: inline-block;
-  margin: 30px 7px;
+.img_datas img {
+  width: 36.875rem;
+  height: 29rem;
 }
 /* ============================================MATERIAL DATA END ================ */
 
 /* =====================PRODUCTS END ==================
  */
 .about_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #19bbd3;
-  margin-top: 150px;
   height: 651px;
   width: 100vw;
   position: relative;
@@ -681,6 +694,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100vw;
+  margin-bottom: 5rem;
 }
 .mnone {
   display: inline-block;
@@ -699,16 +713,15 @@ nav {
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 24px;
   margin-top: -100px;
-  padding: 80px 50px 50px 50px;
   width: 100%;
-  height: 806px;
+  padding: 5rem 3.125rem 3.125rem 3.125rem;
 }
 .all_csection h1 {
   text-align: center;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 130%;
   margin-bottom: 20px;
 }
@@ -718,18 +731,23 @@ nav {
   grid-template-rows: repeat(3, 175px);
   gap: 20px;
 }
+.client_logos_img img {
+  width: 18rem;
+  height: 10rem;
+}
 /* ================CLIENTS END==================== */
 
 .address {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 600px;
-  margin-top: 80px;
+  position: relative;
+  margin-bottom: 5rem;
 }
 .address_map {
-  position: relative;
-  height: 560px;
-  width: 800px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  height: 35rem;
   border-radius: 0 18px 18px 0;
 }
 
@@ -741,8 +759,9 @@ nav {
 
 .address_map .location {
   position: absolute;
-  top: 282px;
-  left: 310px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .address_map .location img:nth-child(1) {
   width: 50px;
@@ -796,10 +815,9 @@ nav {
 }
 
 .form_section {
-  width: 519px;
-  height: 560px;
+  width: 32rem;
   margin: 0 10% 0 30px;
-  padding: 50px;
+  padding: 3.125rem;
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 18px;
@@ -814,10 +832,10 @@ nav {
 }
 .form label {
   display: block;
-  margin: 20px 0 5px 0;
+  margin: 1.25rem 0 0.3125rem 0;
 }
 .form input {
-  width: 419px;
+  width: 100%;
   height: 48px;
   background: #f8fbfc;
   border: 1px solid #dbe1e1;
@@ -825,7 +843,7 @@ nav {
   padding: 0 10px;
 }
 .send {
-  width: 419px;
+  width: 100%;
   height: 48px;
   margin: 60px 0 0 0;
 }
@@ -838,7 +856,6 @@ nav {
   display: grid;
   grid-template-columns: 65% 35%;
   align-items: center;
-  margin-top: 50px;
 }
 
 .footer h1 {
@@ -915,6 +932,7 @@ nav {
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 18px;
   padding: 50px;
+  z-index: 10;
 }
 .successfully_section {
   align-items: center;
@@ -982,6 +1000,7 @@ nav {
 /* ======================================MEDIA SECTION ============== */
 .media {
   width: 100vw;
+  margin-bottom: 5rem;
 }
 .media h1 {
   font-family: "Heebo";
@@ -1009,36 +1028,32 @@ nav {
 }
 
 /* ====================================RESPONSIVE SECTION START============================ */
+@media (max-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+  .products_change {
+    height: 30rem;
+  }
+  .material {
+    width: 20rem;
+  }
+}
 
 @media (max-width: 560px) {
-  body {
-    width: auto;
+  html {
+    font-size: 12px;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   /* ========================NAVBAR RESPONSIVE START================= */
-  nav {
-    width: 100%;
-    height: 65px;
-    background-color: #fff;
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 0 0 0;
-  }
-
-  .logo img {
-    width: 81px;
-    height: 41px;
-    margin-right: 15.25px;
-  }
   .burger_menu {
     display: inline-block;
     width: 15.5px;
     height: 15.5px;
-  }
-  .none {
-    display: none;
   }
   .burMenu {
     position: fixed;
@@ -1087,6 +1102,9 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .logo img {
+    margin-right: 15.25px;
+  }
 
   /* =================================NAVBAR RESPONSIVE END==================== */
 
@@ -1094,6 +1112,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
   }
 
   .bimgper {
@@ -1112,9 +1131,8 @@ nav {
   }
 
   .products_change {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 0;
     width: 311px;
     height: 288px;
     background: #ffffff;
@@ -1135,6 +1153,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .btn_products {
+    padding: 10px 73px;
+    width: 264px;
+    height: 44px;
   }
   .left_arr,
   .right_arr {
@@ -1172,12 +1195,17 @@ nav {
     align-items: center;
   }
   .con_img {
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0;
+  }
+  .con_img_bg {
+    width: 3rem;
+    height: 3rem;
   }
 
-  .con_img img {
-    width: 16px;
+  .con_img_bg img {
+    width: 1rem;
   }
   .content {
     border-radius: 12px;
@@ -1186,7 +1214,6 @@ nav {
     grid-template-columns: 62px auto;
     padding: 18px;
     width: 335px;
-    height: 146px;
     transition: 0.5s ease;
   }
   .ubluebg {
@@ -1197,11 +1224,7 @@ nav {
     margin-bottom: 2px;
   }
   .content p {
-    font-family: "Heebo";
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 150%;
   }
   /* ====================why us section res end. ==================== */
   .btn_light a {
@@ -1244,14 +1267,27 @@ nav {
   .pro_con p {
     font-size: 14px;
   }
-  .btn_light {
-    width: 281px;
-    height: 44px;
+  .building_materials {
+    margin-top: 0;
+    overflow: hidden;
+  }
+  .material_navigation {
+    padding: 2.25rem 0 0 1.25rem;
+    width: 100vw;
+    background-color: white;
+    margin-bottom: 2rem;
+  }
+  .building_data_item {
+    display: none;
+  }
+  .material_navigation .btn_light {
+    display: none;
   }
   /* =======================BUILDING RES START============================== */
-  .container {
-    width: 90%;
-    margin: 0 auto;
+  .materials_datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .bbtn1 {
     display: none;
@@ -1267,95 +1303,68 @@ nav {
     gap: 0;
   }
   .nav_bars ul {
-    width: 100%;
-    height: 46px;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 450%;
+    height: 2.5rem;
     background: #ffffff;
-    box-shadow: 0px 0px 18px rgb(0 0 0 / 4%);
-    border-radius: 12px;
+    box-shadow: 0px 0px 0 0;
   }
   .nav_bars ul li {
-    padding: 10px 0;
+    border: none;
+    padding: 0;
   }
   .nav_bars ul li a {
     font-size: 14px;
   }
 
   .active::after {
+    content: "";
     position: absolute;
-    top: 44px;
-    left: 3px;
-    content: url("./images/pastki.png");
-    width: 100px;
-    height: 3px;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
     color: #0696ac;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
   }
 
   .material_navigation h1 {
     font-size: 24px;
-    margin: 10px 0;
-  }
-  .material {
-    height: 356px;
-    width: 320px;
-    padding: 10px;
-    margin: 15px auto;
-  }
-  .material .mimg img {
-    height: 188px;
-    width: 299px;
   }
   .material h1 {
     font-size: 20px;
     margin: 10px 0;
   }
-  .material p {
-    margin: 10px 0;
-  }
   /* ============material datas res start======== */
-  .materials_datas {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, auto);
-    margin-bottom: 50px;
-    overflow: hidden;
-  }
   .material_data1 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 20px;
+    flex-direction: column;
   }
   .img_datas img {
-    height: 262px;
-    width: 335px;
-    left: 20px;
-    top: 154px;
+    width: 100%;
     border-radius: 12px;
   }
-
+  .back_btn_left {
+    align-items: flex-start;
+  }
+  .characters {
+    width: 100%;
+  }
+  .characs {
+    width: 100%;
+  }
   .characters h1 {
     font-size: 20px;
   }
-
-  .characters p {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  .characs {
-    height: 173px;
-    width: 335px;
+  .paragrapgh {
+    width: 25rem;
   }
   .characs p {
     font-size: 12px;
-    margin: 8px 0;
-  }
-  .characs p::after {
-    content: "------------------------";
-    margin: 0 20px;
-    height: 1px;
-    color: #dbe1e1;
   }
 
   .characs h3 {
@@ -1364,23 +1373,40 @@ nav {
 
   .material_tit h1 {
     font-size: 20px;
-    margin: 20px 0 0 0;
+    margin: 0 auto;
   }
   .material_data2_all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 23rem;
     position: relative;
   }
   .material_data2 {
-    width: 400%;
-    height: 450px;
+    width: 23rem;
+  }
+  .material {
+    width: 23rem;
   }
   .left_arrp {
     position: absolute;
-    top: 240px;
-    left: 4px;
-    padding: 10px 20px;
+    top: 50%;
+    left: -1rem;
+    width: 2rem;
+    height: 2rem;
     transform: rotate(180deg);
     border-radius: 50%;
-    margin-right: 10px;
+    z-index: 10;
+  }
+  .right_arrp {
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    right: -1rem;
+    border-radius: 50%;
+    z-index: 10;
   }
   .left_arrp img {
     width: 6px;
@@ -1393,13 +1419,8 @@ nav {
     height: 11px;
     margin-top: 5px;
   }
-  .right_arrp {
-    position: absolute;
-    top: 240px;
-    right: -6px;
-    padding: 10px 20px;
-    border-radius: 50%;
-    margin-right: 10px;
+  .buildbtn {
+    width: 100%;
   }
 
   /* ============material datas res end======== */
@@ -1416,11 +1437,11 @@ nav {
     height: 100%;
   }
   .about_us {
+    display: inline-block;
     background: #19bbd3;
+    width: 100vw;
     border-radius: 12px;
-    position: relative;
     height: 790px;
-    margin-top: 0;
   }
   .about_content2 {
     margin: 24px 0 0 16px;
@@ -1501,14 +1522,15 @@ nav {
   .address {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 500px;
+    grid-template-rows: 550px 500px;
     margin-top: 0;
   }
   .address_map {
     border-radius: 18px;
     width: 335px;
     height: 337px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
   .address_contacts {
     position: absolute;
@@ -1532,6 +1554,10 @@ nav {
     grid-row-start: 1;
   }
   .form_section {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 350px;
     height: 412px;
     padding: 20px;

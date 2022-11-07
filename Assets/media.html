@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="overlay none" id="overlay"></div>
-    <nav>
-      <div class="container">
+    <nav class="flex justify_center">
+      <div class="container justify_center">
         <div class="burMenu none" id="bur-menu">
           <button class="close" onclick="closeNav()">
             <img src="../Images/close.png" alt="" />
@@ -25,7 +25,7 @@
         <div class="navbar">
           <div class="navbarText">
             <div class="logo">
-              <a href="../index.html">
+              <a href="../Index.html">
                 <img src="../Images/logo.png" alt="logo" />
               </a>
             </div>
@@ -38,7 +38,7 @@
               />
             </div>
             <div class="menu">
-              <ul>
+              <ul class="flex justify_center align_center">
                 <li><a href="../index.html#about">About us</a></li>
                 <li><a href="../Assets/products.html">Products</a></li>
                 <li><a href="../Assets/media.html" target="_self">Media</a></li>
@@ -59,9 +59,11 @@
     </nav>
 
     <section class="media" id="media">
-      <div class="container">
-        <h1>Media</h1>
-        <div class="all_media">
+      <div class="all_media flex flex_column justify_center align_center">
+        <div class="container">
+          <h1>Media</h1>
+        </div>
+        <div class="container flex_column">
           <div class="first_row">
             <div class="media_left">
               <img src="../Images/media/first.png" alt="media" />
