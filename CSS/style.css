@@ -19,7 +19,8 @@ html {
 body {
   font-family: "Heebo", sans-serif;
   background: #eaeaea;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -27,12 +28,6 @@ body {
   width: 80%;
 }
 /* ======================GLOBAL STYLES========== */
-.ubluebg {
-  background: #03abbc;
-}
-.light_blue {
-  background: #43d3e5;
-}
 .bluebg {
   background: #03abbc;
 }
@@ -90,6 +85,9 @@ body {
 }
 .justify_evenly {
   justify-content: space-evenly;
+}
+.justify_flexEnd {
+  justify-content: flex-end;
 }
 .justify_around {
   justify-content: space-around;
@@ -197,15 +195,15 @@ nav {
   align-items: center;
   position: relative;
   width: 100vw;
-  margin-bottom: 5rem;
+  height: 93.5vh;
 }
 .bimgper {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -1;
-  width: 60rem;
-  height: 35.75rem;
+  width: 67%;
+  height: 100%;
 }
 .products_change {
   flex-direction: column;
@@ -214,7 +212,6 @@ nav {
   border: 2px solid #e1e3e3;
   border-radius: 40px;
   padding: 0 2.5rem;
-  margin-top: 27px;
   height: 32.3125rem;
 }
 .prodtitle {
@@ -260,7 +257,7 @@ nav {
   border-radius: 50%;
 }
 .left_arr {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .left_arr img {
   transform: rotate(180deg);
@@ -272,10 +269,12 @@ nav {
   align-items: center;
 }
 /* =============HEADER SECTION END======================== */
+.why_us {
+  padding: 5rem 0;
+}
 .why_us_contents {
   width: 100%;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 .why_title {
   text-align: center;
@@ -298,15 +297,37 @@ nav {
   border-radius: 12px;
   transition: 0.5s ease;
   padding: 1.875rem 2.5rem 1.875rem 1.875rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.content::after {
+  content: "";
+  background-color: #19bbd3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  right: 100%;
+  transition: all 0.5s ease;
+}
+.content:hover::after {
+  right: 0;
+}
+.content:hover {
+  box-shadow: 5px 5px 10px #cdcdcd;
+}
+.content:hover .con_titles h1,
+.content:hover .con_titles p {
+  color: white;
 }
 .long_content {
   width: 56%;
 }
 .short_content {
   width: 40%;
-}
-.content:hover {
-  box-shadow: 5px 5px 10px #cdcdcd;
 }
 .con_img {
   width: 6.25rem;
@@ -317,6 +338,7 @@ nav {
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 50%;
+  background: #43d3e5;
 }
 .con_titles {
   flex-direction: column;
@@ -343,7 +365,7 @@ nav {
 .products {
   flex-direction: column;
   width: 100vw;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
 }
 .pro_title {
   text-align: center;
@@ -353,6 +375,7 @@ nav {
   font-size: 2.375rem;
   line-height: 130%;
   color: #000;
+  margin-bottom: 1.5rem;
 }
 .products_contents {
   width: 100%;
@@ -367,7 +390,6 @@ nav {
   background: #ffffff;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
-  margin: 1.5rem 1.25rem 0 0;
   padding: 3.875rem 2.5rem 2.5rem 2.5rem;
 }
 
@@ -416,7 +438,8 @@ nav {
 }
 .building_materials .btn_light,
 .back_btn {
-  width: 12.625rem;
+  width: 202px;
+  height: 45px;
   margin-bottom: 2rem;
 }
 .btn_light:hover {
@@ -593,11 +616,8 @@ nav {
   background: #fff;
   padding: 1rem 2rem;
 }
-.characs_conten {
-  align-items: flex-end;
-}
 .characs p {
-  display: inline-block;
+  padding: 0 2rem 0 0;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
@@ -607,20 +627,17 @@ nav {
 }
 .hr_item {
   width: 30%;
-  margin: 0 30px;
-  border-bottom: 2px dashed #dbe1e1;
+  border: 1px dashed #dbe1e1;
 }
 .paragrapgh {
   width: 30rem;
 }
 .characs h3 {
-  display: inline-block;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 140%;
-  text-align: right;
   color: #000000;
 }
 .material_data2,
@@ -694,7 +711,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100vw;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 .mnone {
   display: inline-block;
@@ -714,7 +731,7 @@ nav {
   border-radius: 24px;
   margin-top: -100px;
   width: 100%;
-  padding: 5rem 3.125rem 3.125rem 3.125rem;
+  padding: 5rem 3.125rem 3.125rem 3.5rem;
 }
 .all_csection h1 {
   text-align: center;
@@ -723,17 +740,15 @@ nav {
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 130%;
-  margin-bottom: 20px;
 }
 .client_logos_img {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 175px);
-  gap: 20px;
+  grid-template-columns: auto auto auto;
 }
 .client_logos_img img {
-  width: 18rem;
-  height: 10rem;
+  width: 22.0625rem;
+  height: 10.9375rem;
+  margin-bottom: 1.5rem;
 }
 /* ================CLIENTS END==================== */
 
@@ -850,46 +865,37 @@ nav {
 /* ===============================FORM SECTION END============= */
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 91px;
   background: #19bbd3;
-  display: grid;
-  grid-template-columns: 65% 35%;
-  align-items: center;
 }
 
 .footer h1 {
-  text-align: right;
+  position: absolute;
   color: #fff;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
-  margin-right: 70px;
-}
-.socials {
-  margin-left: 100px;
 }
 .socials h2 {
-  display: inline-block;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
   text-align: center;
   color: #fff;
-}
-
-.socials ul {
-  display: inline-block;
+  margin-right: 1.125rem;
 }
 
 .socials ul li {
-  display: inline-block;
   list-style: none;
   margin-left: 10px;
+}
+.socials ul li:first-child {
+  margin-left: 0;
 }
 .socials ul li a {
   text-decoration: none;
@@ -1021,10 +1027,57 @@ nav {
 .second_row {
   margin-top: 40px;
 }
-.media_left img,
-.media_right img {
+.mediaImg_item {
+  position: relative;
+  overflow: hidden;
   width: 590px;
   height: 472px;
+  border-radius: 12px;
+}
+.media_left img,
+.media_right img {
+  width: 100%;
+  height: 100%;
+}
+
+.img_text {
+  position: absolute;
+  bottom: -100%;
+  left: 1.5rem;
+  width: 70%;
+  transition: all 0.5s;
+}
+.overlay_ImgText {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+.img_text h1 {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: white;
+}
+.img_text p {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: #ffffff;
+}
+.mediaImg_item:hover .img_text {
+  bottom: 1.5rem;
+}
+.mediaImg_item:hover .overlay_ImgText {
+  opacity: 1;
 }
 
 /* ====================================RESPONSIVE SECTION START============================ */
@@ -1230,7 +1283,6 @@ nav {
   .btn_light a {
     text-decoration: none;
     color: #0696ac;
-    padding: 10px 102px;
   }
   /* =========================================================== */
 
@@ -1586,18 +1638,16 @@ nav {
     width: 100%;
     height: 91px;
     background: #19bbd3;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 40px 30px;
     align-items: center;
-    text-align: center;
-    margin-top: 80px;
+    justify-content: center;
+    flex-direction: column;
   }
   .footer h1 {
-    text-align: center;
+    position: static;
     font-size: 12px;
     line-height: 14px;
     margin-right: 0;
+    margin-bottom: 1.5rem;
   }
   .socials {
     margin-left: 0px;

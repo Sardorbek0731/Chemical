@@ -9,6 +9,8 @@
   </head>
   <body>
     <div class="overlay none" id="overlay"></div>
+
+    <!-- Nav -->
     <nav class="flex justify_center">
       <div class="container justify_center">
         <div class="burMenu none" id="bur-menu">
@@ -58,43 +60,118 @@
       </div>
     </nav>
 
-    <section class="address flex flex_column align_center" id="contact">
-      <div class="container">
-        <h1 class="contact_title text_align mt_40">Contact us</h1>
+    <!-- Address-->
+    <section>
+      <div class="address flex flex_column align_center" id="contact">
+        <div class="container">
+          <h1 class="contact_title text_align mt_40">Contact us</h1>
+        </div>
+        <div class="container justify_between">
+          <div class="address_contacts flex flex_column justify_between">
+            <div class="contents_p">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
+              </p>
+            </div>
+            <div class="contents_data flex justify_between align_center">
+              <div class="top_data">
+                <img src="../Images/icons/fi-rr-phone-call.png" alt="phone" />
+                <p>Phone number</p>
+              </div>
+              <h1>+998 97 628 28 82</h1>
+            </div>
+            <div class="contents_data flex justify_between align_center">
+              <div class="top_data">
+                <img src="../Images/icons/mail.png" alt="email" />
+                <p>E-mail</p>
+              </div>
+              <h1>The.faksa@gmail.com</h1>
+            </div>
+            <div class="contents_data flex justify_between align_center">
+              <div class="top_data">
+                <img src="../Images/icons/address.png" alt="Adress" />
+                <p>Adress</p>
+              </div>
+              <h1>Farg’ona shaxar, Boychechak 4</h1>
+            </div>
+            <div class="contents_links flex justify_between align_center">
+              <h2>Biz ijtimoiy tarmoqlarda</h2>
+              <ul class="flex justify_center align_center">
+                <li>
+                  <a href="#"
+                    ><img src="../Images/icons/facebook.png" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../Images/icons/instagramm.png" alt="instagramm"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../Images/icons/telegram.png" alt="telegram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../Images/icons/telegram.png" alt="yanatelegram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form_cons">
+            <form class="form flex justify_between flex_column">
+              <div class="name">
+                <label>Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Ismingizni kiriting!"
+                />
+              </div>
+              <div class="number">
+                <label>Phone number</label>
+                <input
+                  type="text"
+                  id="number"
+                  placeholder="Telefon raqamingizni kiriting"
+                />
+              </div>
+              <div class="email">
+                <label>Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email pochtani kiriting"
+                />
+              </div>
+              <button class="btn send" id="send">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="container">
+          <div class="address_map">
+            <img src="../Images/mapImg.png" alt="map" class="addmap" />
+            <div class="location">
+              <img src="../Images/location.png" alt="location" />
+              <img src="../Images/logo.png" alt="address" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container justify_between">
-        <div class="address_contacts flex flex_column justify_between">
-          <div class="contents_p">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever
-            </p>
-          </div>
-          <div class="contents_data flex justify_between align_center">
-            <div class="top_data">
-              <img src="../Images/icons/phoneIcon.png" alt="phone" />
-              <p>Phone number</p>
-            </div>
-            <h1>+998 97 628 28 82</h1>
-          </div>
-          <div class="contents_data flex justify_between align_center">
-            <div class="top_data">
-              <img src="../Images/mail.png" alt="email" />
-              <p>E-mail</p>
-            </div>
-            <h1>The.faksa@gmail.com</h1>
-          </div>
-          <div class="contents_data flex justify_between align_center">
-            <div class="top_data">
-              <img src="../Images/address.png" alt="Adress" />
-              <p>Adress</p>
-            </div>
-            <h1>Farg’ona shaxar, Boychechak 4</h1>
-          </div>
-          <div class="contents_links flex justify_between align_center">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer flex justify_center align_center">
+        <h1>All rights reserved enviro chemicals</h1>
+        <div class="container justify_flexEnd align_center">
+          <div class="socials flex align_center">
             <h2>Biz ijtimoiy tarmoqlarda</h2>
-            <ul class="flex justify_center align_center">
+            <ul class="flex">
               <li>
                 <a href="#"
                   ><img src="../Images/icons/facebook.png" alt="facebook"
@@ -118,71 +195,8 @@
             </ul>
           </div>
         </div>
-        <div class="form_cons">
-          <form class="form flex justify_between flex_column">
-            <div class="name">
-              <label>Name</label>
-              <input type="text" id="name" placeholder="Ismingizni kiriting!" />
-            </div>
-            <div class="number">
-              <label>Phone number</label>
-              <input
-                type="text"
-                id="number"
-                placeholder="Telefon raqamingizni kiriting"
-              />
-            </div>
-            <div class="email">
-              <label>Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email pochtani kiriting"
-              />
-            </div>
-            <button class="btn send" id="send">Send</button>
-          </form>
-        </div>
       </div>
-      <div class="container">
-        <div class="address_map">
-          <img src="../Images/mapImg.png" alt="map" class="addmap" />
-          <div class="location">
-            <img src="../Images/location.png" alt="location" />
-            <img src="../Images/logo.png" alt="address" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer">
-      <h1>All rights reserved enviro chemicals</h1>
-      <div class="socials">
-        <h2>Biz ijtimoiy tarmoqlarda</h2>
-        <ul>
-          <li>
-            <a href="#"
-              ><img src="../Images/icons/facebook.png" alt="facebook"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../Images/icons/instagramm.png" alt="instagramm"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../Images/icons/telegram.png" alt="telegram"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../Images/icons/telegram.png" alt="yanatelegram"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    </footer>
 
     <div class="order_now none" id="order-now">
       <div class="overlay"></div>
