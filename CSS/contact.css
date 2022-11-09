@@ -18,8 +18,8 @@ html {
 }
 body {
   font-family: "Heebo", sans-serif;
-  background: #eaeaea;
-  width: 100vw;
+  background: #f8fbfc;
+  width: 100%;
 }
 .overlay {
   position: fixed;
@@ -118,7 +118,7 @@ body {
 }
 /* =============GLOBAL STYLES============= */
 nav {
-  width: 100vw;
+  width: 100%;
   height: 4.0625rem;
   background-color: #fff;
 }
@@ -203,6 +203,7 @@ nav {
 
 .address {
   position: relative;
+  width: 100%;
   margin-bottom: 5rem;
 }
 .contact_title {
@@ -217,7 +218,7 @@ nav {
 .address_map {
   position: relative;
   width: 100%;
-  height: 35rem;
+  height: auto;
 }
 
 .addmap {
@@ -347,7 +348,7 @@ nav {
 /* ===============================FORM SECTION END============= */
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 91px;
   background: #19bbd3;
   display: grid;
@@ -497,6 +498,7 @@ nav {
   }
   .contact_title {
     font-size: 24px;
+    width: 100%;
   }
   .footer {
     width: 100%;

@@ -18,9 +18,8 @@ html {
 }
 body {
   font-family: "Heebo", sans-serif;
-  background: #eaeaea;
+  background: #F8FBFC;
   width: 100%;
-  height: 100%;
 }
 
 .container {
@@ -106,8 +105,8 @@ body {
 }
 /* =============GLOBAL STYLES============= */
 nav {
-  width: 100vw;
-  height: 4.0625rem;
+  width: 100%;
+  height: 65px;
   background-color: #fff;
 }
 .navbar {
@@ -166,7 +165,7 @@ nav {
 }
 .lang select {
   border: none;
-  background-color: white;
+  background-color: transparent;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
@@ -174,7 +173,7 @@ nav {
   line-height: 150%;
   color: #000;
   outline: none;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 .lang select option {
   font-family: "Heebo";
@@ -194,7 +193,7 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 93.5vh;
 }
 .bimgper {
@@ -202,7 +201,7 @@ nav {
   top: 0;
   right: 0;
   z-index: -1;
-  width: 67%;
+  width: 60rem;
   height: 100%;
 }
 .products_change {
@@ -232,15 +231,11 @@ nav {
 }
 .products_btn {
   width: 100%;
+  position: relative;
 }
 .btn_products {
   width: 13.1875rem;
   height: 3.125rem;
-}
-.sakson {
-  position: absolute;
-  top: auto;
-  left: 80%;
 }
 
 .btn_products a {
@@ -264,12 +259,16 @@ nav {
 }
 
 .slider_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* =============HEADER SECTION END======================== */
 .why_us {
+  width: 100%;
   padding: 5rem 0;
 }
 .why_us_contents {
@@ -364,7 +363,7 @@ nav {
 
 .products {
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 10rem;
 }
 .pro_title {
@@ -417,6 +416,7 @@ nav {
 /* ===================BUILDING MATERIALS START============ */
 .building_materials {
   margin: 2rem 0;
+  width: 100%;
 }
 .btn_light {
   display: flex;
@@ -521,12 +521,7 @@ nav {
   margin-bottom: 20px;
 }
 .material .mimg img {
-  height: 13.375rem;
   width: 100%;
-  border-radius: 12px;
-  background: linear-gradient(0deg, #dbe1e1, #dbe1e1),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-  border: 1px solid #dbe1e1;
 }
 .material h1 {
   font-family: "Heebo";
@@ -559,6 +554,11 @@ nav {
 /* ===================BUILDING MATERIALS END============ */
 
 /* ===================BUILDING DATAS START============ */
+.material_data2_all {
+  position: relative;
+  width: 100%;
+  left: 0;
+}
 .building_datas {
   margin: 2rem 0;
 }
@@ -663,8 +663,9 @@ nav {
   align-items: center;
   background: #19bbd3;
   height: 651px;
-  width: 100vw;
+  width: 100%;
   position: relative;
+  left: 0;
   z-index: -1;
 }
 .about_contents {
@@ -710,7 +711,7 @@ nav {
 .clients {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 5rem;
 }
 .mnone {
@@ -738,7 +739,7 @@ nav {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.375rem;
+  font-size: 38px;
   line-height: 130%;
 }
 .client_logos_img {
@@ -866,17 +867,18 @@ nav {
 
 .footer {
   width: 100%;
+  height: 91px;
   background: #19bbd3;
 }
 
 .footer h1 {
-  position: absolute;
   color: #fff;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 14px;
+  position: absolute;
 }
 .socials h2 {
   font-family: "Rubik";
@@ -1004,7 +1006,7 @@ nav {
 
 /* ======================================MEDIA SECTION ============== */
 .media {
-  width: 100vw;
+  width: 100%;
   margin-bottom: 5rem;
 }
 .media h1 {
@@ -1027,11 +1029,11 @@ nav {
   margin-top: 40px;
 }
 .mediaImg_item {
-  position: relative;
-  overflow: hidden;
   width: 590px;
   height: 472px;
   border-radius: 12px;
+  overflow: hidden;
+  position: relative;
 }
 .media_left img,
 .media_right img {
@@ -1123,6 +1125,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 95%;
   }
   /* ========================NAVBAR RESPONSIVE START================= */
   .burger_menu {
@@ -1228,11 +1231,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: static;
   }
   .btn_products {
     padding: 10px 73px;
     width: 264px;
     height: 44px;
+  }
+  .slider_btn {
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    left: 0;
   }
   .left_arr,
   .right_arr {
@@ -1241,18 +1251,16 @@ nav {
   }
   .left_arr {
     position: absolute;
-    top: 50%;
     left: -16px;
+  }
+  .right_arr {
+    position: absolute;
+    right: -16px;
   }
   .left_arr img,
   .right_arr img {
     width: 6.4px;
     height: 11.2px;
-  }
-  .right_arr {
-    position: absolute;
-    top: 50%;
-    right: -16px;
   }
   /* ==============================banner res end=========== */
 
@@ -1307,13 +1315,8 @@ nav {
     color: #0696ac;
   }
   /* =========================================================== */
-
-  .products {
-    margin: 24px 0;
-  }
   .pro_title {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 24px;
   }
   .products_contents {
     margin-top: 20px;
@@ -1454,14 +1457,13 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 23rem;
     position: relative;
   }
   .material_data2 {
-    width: 23rem;
+    position: relative;
   }
   .material {
-    width: 23rem;
+    width: 100%;
   }
   .left_arrp {
     position: absolute;
@@ -1513,7 +1515,6 @@ nav {
   .about_us {
     display: inline-block;
     background: #19bbd3;
-    width: 100vw;
     border-radius: 12px;
     height: 790px;
     margin-bottom: 2rem;
@@ -1552,15 +1553,14 @@ nav {
     box-shadow: 0px 0px 18px rgb(0 0 0 / 4%);
     border-radius: 24px;
     width: 100%;
-    height: 259px;
     margin-top: 24px;
     margin-bottom: 30px;
     padding: 24px 21px;
   }
   .all_csection h1 {
-    font-size: 20px;
     margin: 0;
     text-align: left;
+    font-size: 20px;
   }
   .clients_btn_left,
   .clients_btn_right {
@@ -1579,8 +1579,9 @@ nav {
   }
   .client_logos_img img {
     width: 335px;
-    height: 166px;
+    height: 166.08px;
     display: none;
+    margin-bottom: 0;
   }
   .client_logos_img img:first-child {
     display: block;
@@ -1669,14 +1670,13 @@ nav {
     position: static;
     font-size: 12px;
     line-height: 14px;
-    margin-right: 0;
-    margin-bottom: 1.5rem;
   }
   .socials {
     margin-left: 0px;
   }
   /* ===========================Media section================= */
   .media h1 {
+    width: 100%;
     font-size: 24px;
   }
   .first_row,
@@ -1688,14 +1688,15 @@ nav {
   }
   .media_left,
   .media_right {
-    width: 100%;
+    width: 335px;
+    height: 268px;
   }
   .media_left img,
   .media_right img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
-  .media_left img {
+  .media_left {
     margin-bottom: 18px;
   }
   .second_row {
