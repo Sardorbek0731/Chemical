@@ -113,7 +113,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.0625rem;
   width: 100%;
 }
 
@@ -1108,7 +1107,10 @@ nav {
     font-size: 13px;
   }
   .menu ul li a {
-    font-size: 0.8rem;
+    font-size: 1.05rem;
+  }
+  .container {
+    width: 85%;
   }
   .products_change {
     height: 30rem;
@@ -1133,8 +1135,12 @@ nav {
   .paragrapgh {
     width: 25rem;
   }
-  .characters {
-    height: 23rem;
+  .pro_con {
+    width: 22.5rem;
+  }
+  .pro_con img {
+    width: 6.5rem;
+    height: 6.5rem;
   }
   .form_section {
     width: 30rem;
