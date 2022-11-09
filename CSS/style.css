@@ -563,8 +563,8 @@ nav {
   margin: 2rem 0;
 }
 .buildbtn {
-  width: 307px;
-  height: 48px;
+  width: 19.1875rem;
+  height: 3rem;
 }
 .left_arrp {
   width: 2.5rem;
@@ -1085,11 +1085,34 @@ nav {
   html {
     font-size: 13px;
   }
+  .menu ul li a {
+    font-size: 0.8rem;
+  }
   .products_change {
     height: 30rem;
   }
   .material {
     width: 20rem;
+  }
+  .img_datas img {
+    width: 30rem;
+    height: auto;
+  }
+  .characters h1 {
+    font-size: 1.7rem;
+  }
+  .characs {
+    width: 28rem;
+    height: 10rem;
+  }
+  .characs p {
+    font-size: 0.9rem;
+  }
+  .paragrapgh {
+    width: 25rem;
+  }
+  .characters {
+    height: 23rem;
   }
 }
 
