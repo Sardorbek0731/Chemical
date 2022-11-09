@@ -51,17 +51,20 @@
             </div>
             <div class="lang">
               <img src="./images/icons/Globe.png" alt="Globe" />
-              <select id="lang">
-                <option value="ru">
-                  <img src="./Images/icons/Globe.png" alt="Globe" />Ru
-                </option>
-                <option value="uz">
-                  <img src="./images/icons/Globe.png" alt="Globe" />Uz
-                </option>
-                <option value="eng">
-                  <img src="./images/icons/Globe.png" alt="Globe" />En
-                </option>
-              </select>
+              <div class="dropdown">
+                <div class="drop_btn flex align_center justify_center">
+                  <button class="dropbtn_item" onclick="openDrop()">Ru</button>
+                  <img
+                    src="./Images/icons/fi-rr-angle-small-down.png"
+                    alt="Down"
+                    onclick="openDrop()"
+                  />
+                </div>
+                <div class="dropdown-content none" id="dropdown-content">
+                  <a href="#">Uz</a>
+                  <a href="#">Eng</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

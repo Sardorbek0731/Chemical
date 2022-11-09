@@ -158,33 +158,54 @@ nav {
   color: #43d3e5;
 }
 .lang {
-  margin-left: 380px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.lang select {
-  border: none;
+.dropbtn_item {
   background-color: transparent;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
+  color: black;
   font-size: 16px;
-  line-height: 150%;
-  color: #000;
-  outline: none;
-  margin-left: 0.5rem;
-}
-.lang select option {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000;
-  padding: 5px;
   border: none;
-  background-color: #fff;
+  padding: 0 0.8rem;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop_btn button, .drop_btn img {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  top: 150%;
+  z-index: 10;
+  background-color: white;
+  padding: 0.7rem 2.1rem;
+}
+
+.dropdown-content a {
+  font-family: "Heebo";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 1.125rem;
+}
+.dropdown-content a:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-content a:hover {
+  color: #43d3e5;
 }
 /* ======================================NAVBAR END============= */
 /* ======================= BANNER START============== */
@@ -1114,6 +1135,9 @@ nav {
   }
   .characters {
     height: 23rem;
+  }
+  .form_section {
+    width: 30rem;
   }
 }
 
