@@ -18,7 +18,7 @@ html {
 }
 body {
   font-family: "Heebo", sans-serif;
-  background: #F8FBFC;
+  background: #f8fbfc;
   width: 100%;
 }
 
@@ -1364,6 +1364,7 @@ nav {
   .materials_datas {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .bbtn1 {
@@ -1420,6 +1421,10 @@ nav {
   /* ============material datas res start======== */
   .material_data1 {
     flex-direction: column;
+    justify-content: center;
+  }
+  .img_datas {
+    width: 100%;
   }
   .img_datas img {
     width: 100%;
@@ -1458,12 +1463,14 @@ nav {
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 90%;
   }
   .material_data2 {
     position: relative;
   }
   .material {
     width: 100%;
+    margin: 0 auto;
   }
   .left_arrp {
     position: absolute;
@@ -1659,9 +1666,7 @@ nav {
   /* ===========================address section res end================= */
 
   .footer {
-    width: 100%;
-    height: 91px;
-    background: #19bbd3;
+    height: 89px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -1670,9 +1675,19 @@ nav {
     position: static;
     font-size: 12px;
     line-height: 14px;
+    margin-bottom: 18px;
   }
   .socials {
     margin-left: 0px;
+  }
+  .socials ul li a {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  .socials ul li a img {
+    width: 15px;
+    height: 15px;
   }
   /* ===========================Media section================= */
   .media h1 {
