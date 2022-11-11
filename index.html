@@ -70,35 +70,64 @@
         </div>
       </nav>
 
-      <div class="banner justify_center">
-        <div class="container">
-          <div class="products_change flex justify_evenly align_center">
-            <h1 class="prodtitle">
-              Lorem <span class="ublue">Ipsum </span> is simply dummy text of
-              the
-            </h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum
-            </p>
+      <div class="banner flex justify_center">
+        <div class="container flex">
+          <div class="banner_items flex justify_between align_center">
+            <div class="bannerItems_anim" id="banner-animate">
+              <div class="products_change flex justify_evenly align_center">
+                <h1 class="prodtitle">
+                  Lorem <span class="ublue">Ipsum </span> is simply dummy text
+                  of the
+                </h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry. Lorem Ipsum
+                </p>
 
-            <div class="products_btn flex align_center justify_between">
-              <button class="btn btn_products">
-                <a href="./products.html">Products</a>
-              </button>
-              <div class="slider_btn">
-                <button class="btn left_arr">
-                  <img src="./images/icons/allow_right.png" alt="<" />
-                </button>
-                <button class="btn right_arr">
-                  <img src="./images/icons/allow_right.png" alt=">" />
-                </button>
+                <div class="products_btn flex align_center justify_between">
+                  <button class="btn btn_products">
+                    <a href="./products.html">Products</a>
+                  </button>
+                  <div class="slider_btn">
+                    <button class="btn left_arr">
+                      <img src="./images/icons/allow_right.png" alt="<" />
+                    </button>
+                    <button class="btn right_arr" onclick="rightSlider()">
+                      <img src="./images/icons/allow_right.png" alt=">" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="products_change flex justify_evenly align_center">
+                <h1 class="prodtitle">
+                  Lorem <span class="ublue">Ipsum </span> is simply dummy text
+                  of the
+                </h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry. Lorem Ipsum
+                </p>
+
+                <div class="products_btn flex align_center justify_between">
+                  <button class="btn btn_products">
+                    <a href="./products.html">Products</a>
+                  </button>
+                  <div class="slider_btn">
+                    <button class="btn left_arr" onclick="leftSlider()">
+                      <img src="./images/icons/allow_right.png" alt="<" />
+                    </button>
+                    <button class="btn right_arr" onclick="rightSlider()">
+                      <img src="./images/icons/allow_right.png" alt=">" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <img src="./images/header_person.png" alt="Person" class="bimgper" />
         </div>
-        <img src="./images/header_person.png" alt="Person" class="bimgper" />
       </div>
     </header>
 
@@ -369,14 +398,16 @@
                     type="text"
                     id="name"
                     placeholder="Ismingizni kiriting!"
+                    required
                   />
                 </div>
                 <div class="number">
                   <label>Phone number</label>
                   <input
-                    type="text"
+                    type="number"
                     id="number"
                     placeholder="Telefon raqamingizni kiriting"
+                    required
                   />
                 </div>
                 <div class="email">
@@ -385,6 +416,7 @@
                     type="email"
                     id="email"
                     placeholder="Email pochtani kiriting"
+                    required
                   />
                 </div>
                 <button class="btn send" id="send">Send</button>
@@ -436,13 +468,36 @@
         <button class="close" id="close">
           <img src="./images/close.png" alt="x" />
         </button>
-        <label>Ism</label>
-        <input type="text" placeholder="Ismingizni kiriting!" />
-        <label>Telefon raqami </label>
-        <input type="text" value="+998" />
-        <label>Mail</label>
-        <input type="text" placeholder="Email pochtangizni kiriting!" />
-        <button class="btn send" id="send-next">Send</button>
+        <form class="form">
+          <div class="name">
+            <label>Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Ismingizni kiriting!"
+              required
+            />
+          </div>
+          <div class="number">
+            <label>Phone number</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="Telefon raqamingizni kiriting"
+              required
+            />
+          </div>
+          <div class="email">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email pochtani kiriting"
+              required
+            />
+          </div>
+          <button class="btn send" id="send-next">Send</button>
+        </form>
       </div>
     </div>
 

@@ -349,6 +349,7 @@ nav {
   border: 1px solid #dbe1e1;
   border-radius: 8px;
   padding: 0 1rem;
+  outline: none;
 }
 .send {
   width: 100%;

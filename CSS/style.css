@@ -174,7 +174,8 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.drop_btn button, .drop_btn img {
+.drop_btn button,
+.drop_btn img {
   cursor: pointer;
 }
 
@@ -211,11 +212,20 @@ nav {
 /* ======================= BANNER START============== */
 
 .banner {
-  display: flex;
   align-items: center;
   position: relative;
   width: 100%;
   height: 93.5vh;
+}
+.banner_items {
+  width: 34.875rem;
+  overflow: hidden;
+  height: 32.3125rem;
+  border-radius: 40px;
+}
+.bannerItems_anim {
+  display: flex;
+  transition: all 0.7s linear;
 }
 .bimgper {
   position: absolute;
@@ -227,7 +237,7 @@ nav {
 }
 .products_change {
   flex-direction: column;
-  width: 50%;
+  width: 34.875rem;
   background: #ffffff;
   border: 2px solid #e1e3e3;
   border-radius: 40px;
@@ -532,6 +542,15 @@ nav {
 
 .nav_bars ul li a:hover {
   color: #0696ac;
+}
+
+.slider_container {
+  width: 23rem;
+  overflow: hidden;
+  height: 32.3125rem;
+}
+.buldingItems_slide {
+  display: flex;
 }
 .material {
   padding: 1.5rem;
@@ -876,8 +895,10 @@ nav {
   height: 48px;
   background: #f8fbfc;
   border: 1px solid #dbe1e1;
+  outline: none;
   border-radius: 8px;
   padding: 0 10px;
+  user-select: none;
 }
 .send {
   width: 100%;
