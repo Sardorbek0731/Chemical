@@ -103,6 +103,9 @@ body {
 .mt_40 {
   margin-top: 40px;
 }
+.overflow {
+  overflow: hidden;
+}
 /* =============GLOBAL STYLES============= */
 nav {
   width: 100%;
@@ -173,6 +176,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .drop_btn button,
 .drop_btn img {
@@ -185,10 +189,11 @@ nav {
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   top: 150%;
-  left: -50%;
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   background-color: white;
-  padding: 0.7rem 2.1rem;
+  padding: 0.7rem 1.5rem;
 }
 
 .dropdown-content a {
