@@ -143,7 +143,6 @@ function sliderFunc() {
     }
     buldingAnim.style.transform = `translate(-${index * 50}%)`;
   }
-
 }
 
 function rightSlideBuild() {

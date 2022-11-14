@@ -25,7 +25,6 @@ body {
 .container {
   display: flex;
   width: 80%;
-  overflow: hidden;
 }
 /* ======================GLOBAL STYLES========== */
 .bluebg {
@@ -104,6 +103,9 @@ body {
 .mt_40 {
   margin-top: 40px;
 }
+.overflow {
+  overflow: hidden;
+}
 /* =============GLOBAL STYLES============= */
 nav {
   width: 100%;
@@ -174,6 +176,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .drop_btn button,
 .drop_btn img {
@@ -186,10 +189,11 @@ nav {
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   top: 150%;
-  left: -50%;
-  z-index: 10;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   background-color: white;
-  padding: 0.7rem 2.1rem;
+  padding: 0.7rem 1.5rem;
 }
 
 .dropdown-content a {
@@ -220,12 +224,14 @@ nav {
 }
 .banner_items {
   width: 34.875rem;
-  overflow: hidden;
-  height: 32.3125rem;
   border-radius: 40px;
+  overflow: hidden;
 }
 .bannerItems_anim {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200%;
   transition: all 0.7s;
 }
 .bimgper {
@@ -290,7 +296,8 @@ nav {
   transform: rotate(180deg);
 }
 
-.slider_btn {
+.slider_btn,
+.slider_btn_banner {
   position: absolute;
   top: 0;
   right: 0;
@@ -1248,8 +1255,9 @@ nav {
   }
 
   .banner_items {
-    width: 311px;
     position: relative;
+    width: 324px;
+    border-radius: 12px;
   }
 
   .bimgper {
@@ -1268,12 +1276,13 @@ nav {
   }
 
   .products_change {
-    width: 311px;
+    position: relative;
+    width: 324px;
     height: 288px;
     background: #ffffff;
     border: 2px solid #e1e3e3;
-    border-radius: 24px;
-    padding: 20px 20px;
+    border-radius: 12px;
+    padding: 20px 37px;
   }
   .prodtitle {
     font-size: 24px;
@@ -1302,6 +1311,20 @@ nav {
     transform: translate(0, -50%);
     justify-content: space-between;
     z-index: 10;
+  }
+  .slider_btn_banner {
+    width: 100%;
+    justify-content: space-between;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .left_arr_banner {
+    position: absolute;
+    left: 4px;
+  }
+  .right_arr_banner {
+    position: absolute;
+    right: 5px;
   }
   .left_arr,
   .right_arr {
