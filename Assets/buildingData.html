@@ -121,58 +121,18 @@
             <div class="material_tit flex align_center justify_between">
               <h1>Similar products</h1>
             </div>
-            <div class="material_data2 flex align_center justify_between">
+            <div class="material_data2">
               <div class="slider_btn">
-                <button class="btn left_arr">
+                <button class="btn left_arr" onclick="leftSlideBuild()">
                   <img src="../Images/icons/allow_right.png" alt="<" />
                 </button>
-                <button class="btn right_arr">
+                <button class="btn right_arr" onclick="rightSlideBuild()">
                   <img src="../Images/icons/allow_right.png" alt=">" />
                 </button>
               </div>
 
-              <div class="slider_container">
-                <div class="buldingItems_slide">
-                  <div class="material">
-                    <div class="mimg">
-                      <img src="../Images/sement.png" alt="material" />
-                    </div>
-                    <h1>Pure cellulose pulp, long fibre</h1>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry
-                    </p>
-                    <a href="../Assets/buildingData.html"
-                      >View more <img src="../Images/bluearight.png" alt=">"
-                    /></a>
-                  </div>
-                  <div class="material">
-                    <div class="mimg">
-                      <img src="../Images/sement.png" alt="material" />
-                    </div>
-                    <h1>Pure cellulose pulp, long fibre</h1>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry
-                    </p>
-                    <a href="../Assets/buildingData.html" .
-                      >View more <img src="../Images/bluearight.png" alt=">"
-                    /></a>
-                  </div>
-                  <div class="material">
-                    <div class="mimg">
-                      <img src="../Images/sement.png" alt="material" />
-                    </div>
-                    <h1>Pure cellulose pulp, long fibre</h1>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry
-                    </p>
-                    <a href="../Assets/buildingData.html"
-                      >View more <img src="../Images/bluearight.png" alt=">"
-                    /></a>
-                  </div>
-                </div>
+              <div class="bulding_items flex justify_between align_center">
+                <div class="building_anim" id="bulding-anim"></div>
               </div>
             </div>
           </div>

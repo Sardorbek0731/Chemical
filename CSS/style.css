@@ -25,6 +25,7 @@ body {
 .container {
   display: flex;
   width: 80%;
+  overflow: hidden;
 }
 /* ======================GLOBAL STYLES========== */
 .bluebg {
@@ -225,7 +226,7 @@ nav {
 }
 .bannerItems_anim {
   display: flex;
-  transition: all 0.7s linear;
+  transition: all 0.7s;
 }
 .bimgper {
   position: absolute;
@@ -543,14 +544,14 @@ nav {
 .nav_bars ul li a:hover {
   color: #0696ac;
 }
-
-.slider_container {
-  width: 23rem;
-  overflow: hidden;
-  height: 32.3125rem;
+.bulding_items {
+  width: 200%;
 }
-.buldingItems_slide {
+.building_anim {
   display: flex;
+  justify-content: space-around;
+  transition: all 0.7s linear;
+  width: 100%;
 }
 .material {
   padding: 1.5rem;
@@ -558,10 +559,11 @@ nav {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0px 0px 18px 0px #0000000a;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .material .mimg img {
   width: 100%;
+  height: auto;
 }
 .material h1 {
   font-family: "Heebo";
@@ -1245,6 +1247,11 @@ nav {
     height: 500px;
   }
 
+  .banner_items {
+    width: 311px;
+    position: relative;
+  }
+
   .bimgper {
     position: absolute;
     left: 50%;
@@ -1261,8 +1268,6 @@ nav {
   }
 
   .products_change {
-    position: absolute;
-    bottom: 0;
     width: 311px;
     height: 288px;
     background: #ffffff;
@@ -1291,23 +1296,17 @@ nav {
     height: 44px;
   }
   .slider_btn {
-    justify-content: space-between;
     width: 100%;
     top: 50%;
     left: 0;
+    transform: translate(0, -50%);
+    justify-content: space-between;
+    z-index: 10;
   }
   .left_arr,
   .right_arr {
     width: 32px;
     height: 32px;
-  }
-  .left_arr {
-    position: absolute;
-    left: -16px;
-  }
-  .right_arr {
-    position: absolute;
-    right: -16px;
   }
   .left_arr img,
   .right_arr img {
@@ -1398,11 +1397,10 @@ nav {
   }
   .building_materials {
     margin-top: 0;
-    overflow: hidden;
   }
   .material_navigation {
-    padding: 2.25rem 0 0 1.25rem;
-    width: 100vw;
+    padding: 2rem 0 0 1rem;
+    width: 100%;
     background-color: white;
     margin-bottom: 2rem;
   }
@@ -1418,6 +1416,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .bulding_items {
+    width: 600%;
+  }
+  .build_container {
+    width: 100%;
   }
   .bbtn1 {
     display: none;
@@ -1452,7 +1456,6 @@ nav {
   .active::after {
     content: "";
     position: absolute;
-    bottom: 0;
     top: 100%;
     left: 0;
     width: 100%;
@@ -1464,7 +1467,7 @@ nav {
   }
 
   .material_navigation h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .material h1 {
     font-size: 20px;
@@ -1515,14 +1518,17 @@ nav {
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 90%;
   }
   .material_data2 {
     position: relative;
   }
+  .material_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .material {
     width: 100%;
-    margin: 0 auto;
   }
   .left_arrp {
     position: absolute;
