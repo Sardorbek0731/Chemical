@@ -1633,6 +1633,7 @@ nav {
     margin-top: 24px;
     margin-bottom: 30px;
     padding: 28px;
+    position: relative;
   }
   .all_csection h1 {
     margin: 0;
@@ -1642,6 +1643,8 @@ nav {
   .clients_btn_left,
   .clients_btn_right {
     display: inline-block;
+    position: absolute;
+    top: -4px;
   }
   .clients_btn_right {
     right: 9px;
