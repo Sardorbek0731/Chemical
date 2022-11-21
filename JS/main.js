@@ -112,7 +112,11 @@ function changeSlider() {
     count = changeTitle.length - 1;
   }
 
-  bannerAnimate.style.transform = `translate(-${count * 34.875}rem)`;
+  if (window.screen.width <= 480) {
+    bannerAnimate.style.transform = `translate(-${count * 317}px)`;
+  } else {
+    bannerAnimate.style.transform = `translate(-${count * 34.875}rem)`;
+  }
 }
 
 function leftSlider() {
