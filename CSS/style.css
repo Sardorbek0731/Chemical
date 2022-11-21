@@ -1178,7 +1178,7 @@ nav {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 480px) {
   html {
     font-size: 12px;
   }
@@ -1622,8 +1622,7 @@ nav {
     width: 100%;
   }
   .clients {
-    position: relative;
-    height: 330px;
+    padding-bottom: 0;
   }
   .all_csection {
     display: flex;
@@ -1633,7 +1632,7 @@ nav {
     width: 100%;
     margin-top: 24px;
     margin-bottom: 30px;
-    padding: 24px 21px;
+    padding: 28px;
   }
   .all_csection h1 {
     margin: 0;
@@ -1643,7 +1642,6 @@ nav {
   .clients_btn_left,
   .clients_btn_right {
     display: inline-block;
-    transform: translate(0, -50%);
   }
   .clients_btn_right {
     right: 9px;
@@ -1651,24 +1649,20 @@ nav {
   .clients_btn_left {
     left: 9px;
   }
+  .clients_logos {
+    position: relative;
+    overflow: hidden;
+    padding: 0 32px;
+  }
   .client_logos_img {
     display: flex;
-    justify-content: center;
+    transition: all 0.7s;
+    width: 350px;
   }
   .client_logos_img img {
-    width: 335px;
-    height: 166.08px;
-    display: none;
+    width: 100%;
+    height: auto;
     margin-bottom: 0;
-  }
-  .client_logos_img img:first-child {
-    display: block;
-  }
-  .block {
-    display: block;
-  }
-  .none {
-    display: none;
   }
 
   /* =====================================CLIENTS SECTION RES END====================== */

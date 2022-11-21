@@ -64,13 +64,93 @@ number.forEach((item) => {
 // Slider
 
 const bannerAnimate = document.getElementById("banner-animate");
+let count = 0;
 
-function rightSlider() {
-  bannerAnimate.style.transform = "translate(-50%)";
+const changeTitle = [
+  "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the",
+  "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the",
+];
+
+changeTitle.forEach((item) => {
+  bannerAnimate.innerHTML += `
+    <div class="products_change flex justify_evenly align_center">
+        <h1 class="prodtitle">
+            ${item}
+        </h1>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum
+        </p>
+
+        <div class="products_btn flex align_center justify_between">
+            <button class="btn btn_products">
+                <a href="./products.html">Products</a>
+            </button>
+
+            <div class="slider_btn_banner">
+                <button class="btn left_arr left_arr_banner" onclick="leftSlider()">
+                    <img src="./images/icons/allow_right.png" alt="<" />
+                </button>
+
+                <button class="btn right_arr right_arr_banner" onclick="rightSlider()" >
+                    <img src="./images/icons/allow_right.png" alt=">" />
+                </button>
+
+            </div>
+        </div>
+    </div>
+  `;
+});
+
+function changeSlider() {
+  if (count >= changeTitle.length) {
+    count = 0;
+  } else if (count < 0) {
+    count = changeTitle.length - 1;
+  }
+
+  bannerAnimate.style.transform = `translate(-${count * 50}%)`;
 }
 
 function leftSlider() {
-  bannerAnimate.style.transform = "translate(0)";
+  count--;
+  changeSlider();
+}
+function rightSlider() {
+  count++;
+  changeSlider();
+}
+
+// Clients
+const clientImages = document.getElementById("client-images");
+const images = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+let clientIndex = 0;
+
+images.forEach((item) => {
+  clientImages.innerHTML += `
+      <img src="./images/logoIPsum${item}.png" alt="logoIPsum" />
+  `;
+});
+
+function clientSlider() {
+  if (clientIndex >= images.length) {
+    clientIndex = 0;
+  } else if (clientIndex < 0) {
+    clientIndex = images.length - 1;
+  }
+
+  clientImages.style.transform = `translate(-${clientIndex * 100}%)`;
+}
+
+function leftClientSlider() {
+  clientIndex--;
+  clientSlider();
+}
+function rightClientSlider() {
+  clientIndex++;
+  clientSlider();
 }
 
 // Building Materials
@@ -127,7 +207,7 @@ const material = document.getElementsByClassName("material");
 let index = 0;
 
 function sliderFunc() {
-  if (window.screen.width <= 560) {
+  if (window.screen.width <= 480) {
     if (index >= 6) {
       index = 0;
     } else if (index < 0) {

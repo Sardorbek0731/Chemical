@@ -73,67 +73,7 @@
       <div class="banner flex justify_center">
         <div class="container flex">
           <div class="banner_items flex justify_between align_center">
-            <div class="bannerItems_anim" id="banner-animate">
-              <div class="products_change flex justify_evenly align_center">
-                <h1 class="prodtitle">
-                  Lorem <span class="ublue">Ipsum </span> is simply dummy text
-                  of the
-                </h1>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum
-                </p>
-
-                <div class="products_btn flex align_center justify_between">
-                  <button class="btn btn_products">
-                    <a href="./products.html">Products</a>
-                  </button>
-                  <div class="slider_btn_banner">
-                    <button class="btn left_arr left_arr_banner">
-                      <img src="./images/icons/allow_right.png" alt="<" />
-                    </button>
-                    <button
-                      class="btn right_arr right_arr_banner"
-                      onclick="rightSlider()"
-                    >
-                      <img src="./images/icons/allow_right.png" alt=">" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="products_change flex justify_evenly align_center">
-                <h1 class="prodtitle">
-                  Lorem <span class="ublue">Ipsum </span> is simply dummy text
-                  of the
-                </h1>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum
-                </p>
-
-                <div class="products_btn flex align_center justify_between">
-                  <button class="btn btn_products">
-                    <a href="./products.html">Products</a>
-                  </button>
-                  <div class="slider_btn_banner">
-                    <button
-                      class="btn left_arr_banner left_arr"
-                      onclick="leftSlider()"
-                    >
-                      <img src="./images/icons/allow_right.png" alt="<" />
-                    </button>
-                    <button
-                      class="btn right_arr_banner right_arr"
-                      onclick="rightSlider()"
-                    >
-                      <img src="./images/icons/allow_right.png" alt=">" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="bannerItems_anim" id="banner-animate"></div>
           </div>
           <img src="./images/header_person.png" alt="Person" class="bimgper" />
         </div>
@@ -303,60 +243,20 @@
               class="clients_logos flex flex_column justify_center align_center"
             >
               <div class="slider_btn">
-                <button class="btn left_arr clients_btn_left">
+                <button
+                  class="btn left_arr clients_btn_left"
+                  onclick="leftClientSlider()"
+                >
                   <img src="./images/icons/allow_right.png" alt="" />
                 </button>
-                <button class="btn right_arr clients_btn_right">
+                <button
+                  class="btn right_arr clients_btn_right"
+                  onclick="rightClientSlider()"
+                >
                   <img src="./images/icons/allow_right.png" alt="" />
                 </button>
               </div>
-              <div class="client_logos_img">
-                <img
-                  src="./images/logoIPsum.png"
-                  alt="logoIPsum"
-                  class="block"
-                />
-                <img
-                  src="./images/logoIPsum1.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum2.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum3.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum4.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum5.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum6.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum7.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-                <img
-                  src="./images/logoIPsum8.png"
-                  alt="logoIPsum"
-                  class="mnone"
-                />
-              </div>
+              <div class="client_logos_img" id="client-images"></div>
             </div>
           </div>
         </div>
