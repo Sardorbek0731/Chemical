@@ -68,7 +68,8 @@ let count = 0;
 
 const changeTitle = [
   "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the",
-  "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the",
+  "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the 1",
+  "Lorem <span class='ublue'>Ipsum </span> is simply dummy text of the 2",
 ];
 
 changeTitle.forEach((item) => {
@@ -111,7 +112,7 @@ function changeSlider() {
     count = changeTitle.length - 1;
   }
 
-  bannerAnimate.style.transform = `translate(-${count * 50}%)`;
+  bannerAnimate.style.transform = `translate(-${count * 34.875}rem)`;
 }
 
 function leftSlider() {

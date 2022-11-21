@@ -229,18 +229,8 @@ nav {
 }
 .bannerItems_anim {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 200%;
   transition: all 0.7s;
-}
-.bimgper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 60rem;
-  height: 100%;
 }
 .products_change {
   flex-direction: column;
@@ -304,6 +294,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bimgper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 60rem;
+  height: 100%;
 }
 /* =============HEADER SECTION END======================== */
 .why_us {
