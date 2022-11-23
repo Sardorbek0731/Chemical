@@ -79,30 +79,32 @@ function leftSlideBuild() {
   sliderFunc();
 }
 
-
-const send = document.getElementById("send");
+const pricing = document.getElementById("pricing");
 const orderNow = document.getElementById("order-now");
 const successfully = document.getElementById("successfully");
-const close = document.getElementById("close");
+const closeOrder = document.getElementById("close");
 const closeSuccessfully = document.getElementById("close-successfully");
 const sendNext = document.getElementById("send-next");
 
-send.addEventListener("click", (e) => {
+pricing.addEventListener("click", (e) => {
   e.preventDefault();
   orderNow.classList.remove("none");
 });
 
-close.addEventListener("click", (e) => {
+closeOrder.addEventListener("click", (e) => {
   e.preventDefault();
   orderNow.classList.add("none");
 });
+
 sendNext.addEventListener("click", (e) => {
   e.preventDefault();
-  orderNow.classList.add("none");
-  successfully.classList.remove("none");
+  if (isTrue1 && isTrue2 && isTrue3) {
+    successfully.classList.remove("none");
+    orderNow.classList.add("none");
+  }
 });
+
 closeSuccessfully.addEventListener("click", (e) => {
   e.preventDefault();
-  orderNow.classList.add("none");
   successfully.classList.add("none");
 });
