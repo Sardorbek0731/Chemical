@@ -1,39 +1,26 @@
 const send = document.getElementById("send");
-const orderNow = document.getElementById("order-now");
 const successfully = document.getElementById("successfully");
 const close = document.getElementById("close");
 const closeSuccessfully = document.getElementById("close-successfully");
 const sendNext = document.getElementById("send-next");
+let regEX = /[a-zA-Z0-9]{2,}@/;
+let regExNumber = /^[0-9]{2,}$/;
+let regExName = /^[a-zA-Z]{2,24}$/;
+const email = document.querySelectorAll("#email");
+const number = document.querySelectorAll("#number");
+const ism = document.querySelectorAll("#name");
 
 send.addEventListener("click", (e) => {
   e.preventDefault();
-  orderNow.classList.remove("none");
-});
-
-close.addEventListener("click", (e) => {
-  e.preventDefault();
-  orderNow.classList.add("none");
-});
-sendNext.addEventListener("click", (e) => {
-  e.preventDefault();
-  orderNow.classList.add("none");
   successfully.classList.remove("none");
 });
+
 closeSuccessfully.addEventListener("click", (e) => {
   e.preventDefault();
-  orderNow.classList.add("none");
   successfully.classList.add("none");
 });
 
 // regEx
-
-let regEX = /[a-zA-Z0-9]{2,}@/;
-let regExNumber = /^[0-9]{2,}$/;
-let regExName = /^[a-zA-Z]{2,24}$/;
-
-const email = document.querySelectorAll("#email");
-const number = document.querySelectorAll("#number");
-const ism = document.querySelectorAll("#name");
 
 function regExFunc(id, type) {
   if (type.test(id.value)) {
@@ -64,6 +51,7 @@ number.forEach((item) => {
 // Slider
 
 const bannerAnimate = document.getElementById("banner-animate");
+const bannerImg = document.getElementById("banner-img");
 let count = 0;
 
 const changeTitle = [
@@ -109,7 +97,14 @@ function changeSlider() {
 
   if (window.screen.width <= 480) {
     bannerAnimate.style.transform = `translate(-${count * 317}px)`;
+
+    bannerImg.innerHTML = `
+    <img src="./images/header_person${count}.png" alt="Person" class="bimgper" />
+    `;
   } else {
+    bannerImg.innerHTML = `
+    <img src="./images/header_person${count}.png" alt="Person" class="bimgper" />
+    `;
     bannerAnimate.style.transform = `translate(-${count * 34.875}rem)`;
   }
 }

@@ -222,8 +222,8 @@ nav {
   height: 93.5vh;
 }
 .banner_items {
-  width: 34.875rem;
   border-radius: 40px;
+  width: 34.875rem;
   overflow: hidden;
 }
 .bannerItems_anim {
