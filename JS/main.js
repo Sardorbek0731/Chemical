@@ -52,7 +52,7 @@ function changeSlider() {
   }
 
   if (window.screen.width <= 480) {
-    bannerAnimate.style.transform = `translate(-${count * 317}px)`;
+    bannerAnimate.style.transform = `translate(-${count * 311}px)`;
 
     bannerImg.innerHTML = `
     <img src="./images/header_person${count}.png" alt="Person" class="bimgper" />

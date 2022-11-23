@@ -1253,8 +1253,8 @@ nav {
 
   .banner_items {
     position: relative;
-    width: 317px;
-    border-radius: 12px;
+    width: 311px;
+    border-radius: 24px;
   }
 
   .bimgper {
@@ -1273,11 +1273,11 @@ nav {
 
   .products_change {
     position: relative;
-    width: 317px;
+    width: 311px;
     height: 288px;
     background: #ffffff;
     border: 2px solid #e1e3e3;
-    border-radius: 12px;
+    border-radius: 24px;
     padding: 20px 37px;
   }
   .prodtitle {
