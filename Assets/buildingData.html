@@ -194,13 +194,36 @@
         <button class="close" id="close">
           <img src="../images/close.png" alt="x" />
         </button>
-        <label>Ism</label>
-        <input type="text" placeholder="Ismingizni kiriting!" />
-        <label>Telefon raqami </label>
-        <input type="text" value="+998" />
-        <label>Mail</label>
-        <input type="text" placeholder="Email pochtangizni kiriting!" />
-        <button class="btn send" id="send-next">Send</button>
+        <form class="form">
+          <div class="name">
+            <label>Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Ismingizni kiriting!"
+              required
+            />
+          </div>
+          <div class="number">
+            <label>Phone number</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="Telefon raqamingizni kiriting"
+              required
+            />
+          </div>
+          <div class="email">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email pochtani kiriting"
+              required
+            />
+          </div>
+          <button class="btn send" id="send-next">Send</button>
+        </form>
       </div>
     </div>
 
@@ -218,5 +241,6 @@
 
     <script src="../JS/nav.js"></script>
     <script src="../JS/building.js"></script>
+    <script src="../JS/regEx.js"></script>
   </body>
 </html>

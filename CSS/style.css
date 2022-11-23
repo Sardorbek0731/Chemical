@@ -1029,6 +1029,7 @@ nav {
   border: 1px solid #dbe1e1;
   border-radius: 8px;
   padding: 20px;
+  outline: none;
 }
 .order_section .send {
   width: 100%;
