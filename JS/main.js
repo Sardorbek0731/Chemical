@@ -72,18 +72,6 @@ changeTitle.forEach((item) => {
             typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy
             text of the printing and typesetting industry. Lorem Ipsum
         </p>
-
-        <div class="products_btn flex align_center justify_between">
-            <div class="slider_btn_banner">
-                <button class="btn left_arr left_arr_banner" onclick="leftSlider()">
-                    <img src="./images/icons/allow_right.png" alt="<" />
-                </button>
-
-                <button class="btn right_arr right_arr_banner" onclick="rightSlider()" >
-                    <img src="./images/icons/allow_right.png" alt=">" />
-                </button>
-            </div>
-        </div>
     </div>
   `;
 });
@@ -138,6 +126,13 @@ function clientSlider() {
 
   clientImages.style.transform = `translate(-${clientIndex * 100}%)`;
 }
+
+setInterval(() => {
+  rightSlider();
+}, 3000);
+setInterval(() => {
+  rightClientSlider();
+}, 1500);
 
 function leftClientSlider() {
   clientIndex--;
