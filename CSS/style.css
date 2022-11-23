@@ -1714,10 +1714,9 @@ nav {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0);
     width: 350px;
-    height: 412px;
-    padding: 20px;
+    transform: translate(-50%, 0);
+    padding: 35px;
     margin: 24px auto 25px auto;
   }
   .form_section h1 {
