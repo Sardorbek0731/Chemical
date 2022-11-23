@@ -65,6 +65,10 @@ function changeSlider() {
   }
 }
 
+setInterval(() => {
+  rightSlider();
+}, 3000);
+
 function leftSlider() {
   count--;
   changeSlider();
@@ -94,10 +98,6 @@ function clientSlider() {
 
   clientImages.style.transform = `translate(-${clientIndex * 100}%)`;
 }
-
-setInterval(() => {
-  rightSlider();
-}, 3000);
 
 if (window.screen.width <= 480) {
   setInterval(() => {
