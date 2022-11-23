@@ -6,7 +6,9 @@ const sendNext = document.getElementById("send-next");
 
 send.addEventListener("click", (e) => {
   e.preventDefault();
-  successfully.classList.remove("none");
+  if (isTrue1 && isTrue2 && isTrue3) {
+    successfully.classList.remove("none");
+  }
 });
 
 closeSuccessfully.addEventListener("click", (e) => {
@@ -96,9 +98,12 @@ function clientSlider() {
 setInterval(() => {
   rightSlider();
 }, 3000);
-setInterval(() => {
-  rightClientSlider();
-}, 1500);
+
+if (window.screen.width <= 480) {
+  setInterval(() => {
+    rightClientSlider();
+  }, 1500);
+}
 
 function leftClientSlider() {
   clientIndex--;
