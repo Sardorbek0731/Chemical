@@ -1684,7 +1684,7 @@ nav {
   }
   .address_map {
     border-radius: 18px;
-    width: 335px;
+    width: 345px;
     height: 337px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -1714,7 +1714,7 @@ nav {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 350px;
+    width: 345px;
     transform: translate(-50%, 0);
     padding: 35px;
     margin: 24px auto 25px auto;
