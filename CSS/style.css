@@ -822,7 +822,7 @@ nav {
 .address_map .location {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 65%;
   transform: translate(-50%, -50%);
 }
 .address_map .location img:nth-child(1) {
@@ -832,7 +832,7 @@ nav {
   margin-bottom: 10px;
 }
 .address_map .location img:nth-child(2) {
-  width: 124px;
+  width: 100px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
   border-radius: 37px;
 }
@@ -1446,17 +1446,17 @@ nav {
     gap: 0;
   }
   .nav_bars ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 450%;
+    width: 100%;
     height: 2.5rem;
     background: #ffffff;
     box-shadow: 0px 0px 0 0;
+    white-space: nowrap;
+    overflow: scroll;
   }
   .nav_bars ul li {
     border: none;
     padding: 0;
+    display: inline;
   }
   .nav_bars ul li a {
     font-size: 14px;
@@ -1672,6 +1672,13 @@ nav {
     grid-template-rows: 550px 500px;
     margin-top: 0;
   }
+  .address_map .location img:nth-child(1) {
+    width: 30px;
+    height: 37px;
+  }
+  .address_map .location img:nth-child(2) {
+    width: 65px;
+  }
   .address_map {
     border-radius: 18px;
     width: 335px;
@@ -1694,8 +1701,8 @@ nav {
   }
   .address_map .location {
     position: absolute;
-    top: 135px;
-    left: 150px;
+    top: 220px;
+    left: 170px;
   }
   .form_cons {
     grid-row-start: 1;

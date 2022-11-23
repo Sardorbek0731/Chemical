@@ -242,7 +242,7 @@ nav {
 
 .address_map .location {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -590,6 +590,15 @@ nav {
   .logo img {
     margin-right: 15.25px;
   }
+  .address_map .location img:nth-child(1) {
+    width: 30px;
+    height: 37px;
+  }
+  .address_map .location img:nth-child(2) {
+    width: 65px;
+    height: 50px;
+    box-sizing: 20px;
+  }
   .address_contacts,
   .form_cons {
     width: 355px;
@@ -606,7 +615,13 @@ nav {
     height: 356px;
     border-radius: 18px;
   }
+  .address_map .location {
+    position: absolute;
+    top: 235px;
+    left: 210px;
+  }
   .contents_links {
+    margin-top: 1rem;
     flex-direction: column;
     align-items: flex-start;
   }
