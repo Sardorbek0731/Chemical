@@ -86,10 +86,6 @@ changeTitle.forEach((item) => {
         </p>
 
         <div class="products_btn flex align_center justify_between">
-            <button class="btn btn_products">
-                <a href="./products.html">Products</a>
-            </button>
-
             <div class="slider_btn_banner">
                 <button class="btn left_arr left_arr_banner" onclick="leftSlider()">
                     <img src="./images/icons/allow_right.png" alt="<" />
@@ -98,7 +94,6 @@ changeTitle.forEach((item) => {
                 <button class="btn right_arr right_arr_banner" onclick="rightSlider()" >
                     <img src="./images/icons/allow_right.png" alt=">" />
                 </button>
-
             </div>
         </div>
     </div>

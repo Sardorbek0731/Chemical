@@ -300,7 +300,6 @@ nav {
   top: 0;
   right: 0;
   z-index: -1;
-  width: 60rem;
   height: 100%;
 }
 /* =============HEADER SECTION END======================== */
@@ -834,7 +833,6 @@ nav {
 }
 .address_map .location img:nth-child(2) {
   width: 124px;
-  height: 59px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
   border-radius: 37px;
 }
