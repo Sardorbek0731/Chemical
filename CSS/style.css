@@ -471,6 +471,7 @@ nav {
   line-height: 150%;
   transition: 0.5s ease;
   cursor: pointer;
+  text-decoration: none;
 }
 .building_materials .btn_light,
 .back_btn {
