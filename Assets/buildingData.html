@@ -207,9 +207,12 @@
           <div class="number">
             <label>Phone number</label>
             <input
-              type="text"
+              type="tel"
               id="number"
-              placeholder="Telefon raqamingizni kiriting"
+              name="phone"
+              maxlength="12"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+              placeholder="998941170309"
               required
             />
           </div>
